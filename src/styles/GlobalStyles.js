@@ -81,7 +81,7 @@ const GlobalStyles = createGlobalStyle`
 --image-grayscale: 10%;
 --image-opacity: 90%;
   }
-  --color-white: #eef2ff
+  --color-white: #eef2ff;
    --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
   --color-brand-200: #c7d2fe;
@@ -114,7 +114,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "dupa", sans-serif;
   background-color: var(--background);
   color: var(--color-white);
   min-height: 100vh;

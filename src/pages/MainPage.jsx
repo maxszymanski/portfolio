@@ -1,15 +1,12 @@
 import styled from 'styled-components'
-
-const Text = styled.p`
-	padding: 2em;
-`
+import Header from '../features/mainPage/Header'
 
 function MainPage() {
-	return (
-		<>
-			<Text>Siema</Text>
-		</>
-	)
+    return (
+        <>
+            <Header />
+        </>
+    )
 }
 
 export default MainPage

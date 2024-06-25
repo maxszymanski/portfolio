@@ -1,11 +1,11 @@
 import Header from '../ui/Header'
 
-function MainPage() {
+function Projects() {
     return (
         <>
-            <Header></Header>
+            <Header />
         </>
     )
 }
 
-export default MainPage
+export default Projects

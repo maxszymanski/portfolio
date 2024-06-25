@@ -81,7 +81,7 @@ const GlobalStyles = createGlobalStyle`
 --image-grayscale: 10%;
 --image-opacity: 90%;
   }
-  --color-white: #eef2ff;
+ 
    --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
   --color-brand-200: #c7d2fe;
@@ -96,7 +96,10 @@ const GlobalStyles = createGlobalStyle`
   --border-radius-sm: 5px;
   --border-radius-md: 7px;
   --border-radius-lg: 9px;
-  --background: #282C33
+  --background: #282C33;
+  --color-white: #eef2ff;
+  --color-primary: #C778DD;
+  --color-gray: #ABB2BF;
 
 }
 
@@ -120,6 +123,8 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-size: 1.6rem;
+  position: relative;
+  overflow-x: hidden;
 }
 
 input,
@@ -144,18 +149,9 @@ input:disabled {
   color: var(--color-grey-500);
 }
 
-input:focus,
-button:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid var(--color-brand-600);
-  outline-offset: -1px;
-}
 
 /* Parent selector, finally 😃 */
-button:has(svg) {
-  line-height: 0;
-}
+
 
 a {
   color: inherit;

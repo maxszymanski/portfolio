@@ -7,11 +7,12 @@ const NavItem = styled.li``
 const NavLinkStyled = styled(NavLink)`
     font-size: 2.2rem;
     transition: color 0.3s;
+    padding: 0.5em;
     &:hover {
         color: var(--color-white);
     }
     &.active {
-        color: var(--color-primary);
+        color: var(--color-white);
     }
 `
 

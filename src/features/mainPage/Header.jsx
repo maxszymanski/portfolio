@@ -9,6 +9,7 @@ const MainHeader = styled.header`
     display: flex;
     flex-direction: column;
     padding: 5em 1.5em;
+    align-items: center;
 `
 
 const HeaderBox = styled.div`

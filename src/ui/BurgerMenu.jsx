@@ -51,7 +51,7 @@ const CloseNav = styled.div`
     padding: 0.5em;
     height: 28px;
     width: 35px;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
     cursor: pointer;
 `
 

@@ -1,10 +1,12 @@
 {
-    "welcome": "Cześć! jestem Max, doświadczony ",
+    "hi": "Witaj",
+    "welcome": "Jestem Max, doświadczony ",
     "introduction": "Łączę kreatywność z technologią, dostarczając nowoczesne i efektywne rozwiązania webowe.",
     "home": "Strona główna",
     "projects": "Projekty",
     "contact": "Kontakt",
     "aboutMe": "O mnie",
     "workingon": "Obecnie pracuję nad",
-    "quote": "Kod jest jak humor. Jeśli trzeba go wyjaśniać, jest zły."
+    "quote": "Kod jest jak humor. Jeśli trzeba go wyjaśniać, jest zły.",
+    "contactme": "Skontaktuj się!"
 }

@@ -18,11 +18,11 @@ const Nav = styled.nav`
     color: var(--color-gray);
     transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     z-index: 100;
-    padding: 4em 2em;
+    padding: 4em 1.5em;
 
-    @media ${screenWidth.sm} {
-        transform: translateX(${(props) => (props.$showNav ? '70%' : '100%')});
-        border-left: 1px solid var(--color-gray);
+    @media ${screenWidth.md} {
+        transform: translateX(${(props) => (props.$showNav ? '68%' : '100%')});
+        border-left: 1px solid var(--color-stone);
     }
     @media ${screenWidth.lg} {
         transform: translate(0);
@@ -54,8 +54,11 @@ const NavList = styled.ul`
     @media ${screenWidth.lg} {
         flex-direction: row;
         height: fit-content;
-        width: 70%;
+        width: 85%;
         justify-content: space-between;
+    }
+    @media ${screenWidth.xl} {
+        width: 70%;
     }
 `
 const SocialBox = styled.div`
@@ -95,7 +98,7 @@ function Navigation() {
                         <img src="./images/github.png" />
                     </Link>
                     <Link to="https://pl.linkedin.com/">
-                        <img src="./images/Linkedin.png" />
+                        <img src="./images/linkedin.png" />
                     </Link>
                 </SocialBox>
             </NavContainer>

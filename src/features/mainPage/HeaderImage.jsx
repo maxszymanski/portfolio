@@ -15,6 +15,8 @@ const WorkingBox = styled.div`
     display: flex;
     align-items: center;
     gap: 1em;
+    width: 100%;
+    max-width: 500px;
 `
 const Square = styled.div`
     height: 16px;
@@ -24,11 +26,16 @@ const Square = styled.div`
 `
 
 const HeaderImageBox = styled.div`
-    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
 `
 const HeaderImg = styled.img`
     width: 100%;
-    margin-bottom: -0.5em;
+    max-width: 450px;
+    margin-bottom: -0.1em;
 `
 export const TitleInfo = styled.p`
     color: var(--color-gray);

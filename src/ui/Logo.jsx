@@ -12,13 +12,19 @@ const LogoLink = styled(Link)`
     padding: 0.5em;
     font-weight: 600;
     transition: color 0.3s;
+    font-size: 1.6rem;
 
     &:hover {
-        color: var(--color-primary);
+        color: var(--color-white);
     }
 
+    @media ${screenWidth.small} {
+        font-size: 1.8rem;
+    }
     @media ${screenWidth.lg} {
         display: inline-flex;
+        font-size: 2.2rem;
+        margin-bottom: 4px;
     }
 `
 

@@ -1,19 +1,31 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 
 const AppContext = createContext()
 
 const AppProvider = ({ children }) => {
-    const [showMenu, setShowMenu] = useState(false)
+    const [showNav, setShowNav] = useState(false)
 
-    const toggleShowMenu = () => {
-        setShowMenu((is) => !is)
+    const toggleShowNav = () => {
+        setShowNav((is) => !is)
     }
+
+    useEffect(() => {
+        if (showNav) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'auto'
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto'
+        }
+    }, [showNav])
 
     return (
         <AppContext.Provider
             value={{
-                showMenu,
-                toggleShowMenu,
+                showNav,
+                toggleShowNav,
             }}
         >
             {children}

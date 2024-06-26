@@ -1,4 +1,4 @@
-import Header from '../ui/Header'
+import Header from '../features/mainPage/Header'
 
 function Projects() {
     return (

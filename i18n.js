@@ -1,7 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import plTranslation from './public/locales/pl.json'
-import enTranslation from './public/locales/en.json'
+import plTranslation from './src/locales/pl.json'
+import enTranslation from './src/locales/en.json'
 
 const resources = {
     pl: { translation: plTranslation },

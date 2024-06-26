@@ -5,6 +5,7 @@ const BurgerBox = styled.div`
     position: relative;
     padding: 0.5em;
     height: 28px;
+    margin-bottom: 2px;
     cursor: pointer;
 
     &:hover > div,
@@ -46,13 +47,29 @@ const BurgerButton = styled.div`
     }
 `
 
+const CloseNav = styled.div`
+    padding: 0.5em;
+    height: 28px;
+    width: 35px;
+    margin-bottom: 0.4em;
+    cursor: pointer;
+`
+
 function BurgerMenu() {
-    const { toggleShowMenu } = useAppContext()
-    return (
-        <BurgerBox onClick={toggleShowMenu}>
-            <BurgerButton />
-        </BurgerBox>
-    )
+    const { toggleShowNav, showNav } = useAppContext()
+
+    if (showNav)
+        return (
+            <CloseNav onClick={toggleShowNav}>
+                <img src="/images/x.png" alt="x" />
+            </CloseNav>
+        )
+    if (!showNav)
+        return (
+            <BurgerBox onClick={toggleShowNav}>
+                <BurgerButton />
+            </BurgerBox>
+        )
 }
 
 export default BurgerMenu

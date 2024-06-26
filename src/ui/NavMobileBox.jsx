@@ -1,33 +1,29 @@
 import styled from 'styled-components'
 import BurgerMenu from './BurgerMenu'
-import { Link } from 'react-router-dom'
+import { screenWidth } from '../styles/mediaQueries'
+import Logo from './Logo'
 
 const NavBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-`
-const LogoImage = styled.img``
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.5em 1.5em;
+    background-color: var(--background);
 
-const Logo = styled(Link)`
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5em;
-    padding: 0.5em;
-    transition: color 0.3s;
-
-    &:hover {
-        color: var(--color-primary);
+    @media ${screenWidth.lg} {
+        display: none;
     }
 `
 
 function NavMobileBox() {
     return (
         <NavBox>
-            <Logo>
-                <LogoImage src="/logo.svg"></LogoImage>
-                Max
-            </Logo>
+            <Logo isMobile />
             <BurgerMenu />
         </NavBox>
     )

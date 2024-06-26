@@ -17,14 +17,14 @@ const NavLinkStyled = styled(NavLink)`
 
 const NavLinkSpan = styled.span`
     color: var(--color-primary);
-    margin-right: 0.5em;
+    margin-right: 0.3em;
 `
 
 function NavigationLink({ to, text }) {
-    const { toggleShowMenu } = useAppContext()
+    const { toggleShowNav } = useAppContext()
     return (
         <NavItem>
-            <NavLinkStyled to={to} onClick={toggleShowMenu}>
+            <NavLinkStyled to={to} onClick={toggleShowNav}>
                 <NavLinkSpan>#</NavLinkSpan>
                 {text}
             </NavLinkStyled>

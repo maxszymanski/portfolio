@@ -1,8 +1,26 @@
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import { screenWidth } from '../../styles/mediaQueries'
-import { TitleInfo } from './HeaderImage'
+
 import StyledLink from '../../ui/StyledLink'
+
+const TitleBox = styled.div`
+    margin-top: 0.5em;
+    text-align: center;
+
+    @media ${screenWidth.md} {
+        padding: 0 5em;
+    }
+    @media ${screenWidth.lg} {
+        padding: 0 3em 0 0;
+        margin-top: 0;
+        text-align: left;
+        flex-basis: 60%;
+    }
+    @media ${screenWidth.xl} {
+        padding: 0 8em 0 5em;
+    }
+`
 
 const Title = styled.h1`
     font-size: 3.2rem;
@@ -12,15 +30,30 @@ const Title = styled.h1`
     @media ${screenWidth.small} {
         padding: 0 0.5em;
     }
+    @media ${screenWidth.lg} {
+        padding: 0;
+    }
+    @media ${screenWidth.xl} {
+        font-size: 3.5rem;
+    }
+    @media ${screenWidth.xxl} {
+        font-size: 4rem;
+    }
 `
 export const TitleSpan = styled.span`
     color: var(--color-primary);
     font-weight: 800;
 `
 
-const TitleBox = styled.div`
-    margin-top: 0.5em;
-    text-align: center;
+const TitleText = styled.p`
+    color: var(--color-gray);
+
+    @media ${screenWidth.md} {
+        margin-bottom: 3em;
+    }
+    @media ${screenWidth.xl} {
+        font-size: 1.8rem;
+    }
 `
 
 function HeaderTitle() {
@@ -32,7 +65,7 @@ function HeaderTitle() {
                 <br />
                 {t('welcome')} <br /> <TitleSpan>front-end developer</TitleSpan>
             </Title>
-            <TitleInfo>{t('introduction')}</TitleInfo>
+            <TitleText>{t('introduction')}</TitleText>
             <StyledLink isMobile text="contactme" to="/contact" />
         </TitleBox>
     )

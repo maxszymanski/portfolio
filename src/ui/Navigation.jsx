@@ -3,9 +3,9 @@ import { useAppContext } from '../context/useAppContext'
 import NavigationLink from './NavigationLink'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
 import { screenWidth } from '../styles/mediaQueries'
 import Logo from './Logo'
+import NavSocials from './NavSocials'
 
 const Nav = styled.nav`
     position: fixed;
@@ -25,9 +25,14 @@ const Nav = styled.nav`
         border-left: 1px solid var(--color-stone);
     }
     @media ${screenWidth.lg} {
+        position: absolute;
         transform: translate(0);
         padding: 1em;
         height: fit-content;
+        border-left: none;
+    }
+    @media ${screenWidth.xl} {
+        padding: 1em 4em;
     }
 `
 
@@ -61,22 +66,6 @@ const NavList = styled.ul`
         width: 70%;
     }
 `
-const SocialBox = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-
-    @media ${screenWidth.sm} {
-        justify-content: flex-start;
-    }
-    @media ${screenWidth.lg} {
-        position: fixed;
-        left: 10px;
-        top: 60px;
-        flex-direction: column;
-    }
-`
 
 function Navigation() {
     const { showNav } = useAppContext()
@@ -93,14 +82,7 @@ function Navigation() {
                     <NavigationLink to="/contact" text={t('contact')} />
                     <LanguageSwitcher />
                 </NavList>
-                <SocialBox>
-                    <Link to="https://github.com/maxszymanski">
-                        <img src="./images/github.png" />
-                    </Link>
-                    <Link to="https://pl.linkedin.com/">
-                        <img src="./images/linkedin.png" />
-                    </Link>
-                </SocialBox>
+                <NavSocials />
             </NavContainer>
         </Nav>
     )

@@ -13,11 +13,13 @@ const AppProvider = ({ children }) => {
         if (showNav) {
             document.body.style.overflow = 'hidden'
         } else {
-            document.body.style.overflow = 'auto'
+            document.body.style.overflowY = 'auto'
+            document.body.style.overflowX = 'hidden'
         }
 
         return () => {
-            document.body.style.overflow = 'auto'
+            document.body.style.overflowY = 'auto'
+            document.body.style.overflowX = 'auto'
         }
     }, [showNav])
 

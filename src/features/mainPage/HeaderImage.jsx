@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-
-import { TitleSpan } from './HeaderTitle'
 import { useTranslation } from 'react-i18next'
+import { screenWidth } from '../../styles/mediaQueries'
+import { Link } from 'react-router-dom'
 
 export const commonStyles = `
 position: relative;
@@ -31,28 +31,69 @@ const HeaderImageBox = styled.div`
     align-items: center;
     margin-top: 3em;
     margin-bottom: 0.5em;
+
+    @media ${screenWidth.lg} {
+        margin-top: 0;
+        flex-basis: 40%;
+    }
+    /* @media ${screenWidth.xl} {
+        flex-basis: 50%;
+    } */
 `
-const HeaderImg = styled.img`
+const HeaderImgSmall = styled.img`
     width: 100%;
     max-width: 450px;
     margin-bottom: -0.1em;
+
+    @media ${screenWidth.lg} {
+        display: none;
+    }
+`
+const HeaderImgBig = styled.img`
+    display: none;
+    width: 100%;
+    @media ${screenWidth.lg} {
+        display: block;
+    }
 `
 export const TitleInfo = styled.p`
+    display: flex;
+    flex-direction: column;
     color: var(--color-gray);
+
+    @media ${screenWidth.sm} {
+        flex-direction: row;
+        gap: 0.6em;
+        align-items: center;
+    }
+`
+
+const TitleLink = styled(Link)`
+    color: var(--color-primary);
+    font-weight: 800;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #a864bb;
+    }
 `
 
 function HeaderImage() {
     const { t } = useTranslation()
     return (
         <HeaderImageBox>
-            <HeaderImg
+            <HeaderImgSmall
                 src="./images/header-image.webp"
+                alt="picture of hacker"
+            />
+            <HeaderImgBig
+                src="./images/header-image-big.webp"
                 alt="picture of hacker"
             />
             <WorkingBox>
                 <Square />
                 <TitleInfo>
-                    {t('workingon')} <br /> <TitleSpan>Burrito App</TitleSpan>{' '}
+                    {t('workingon')} <TitleLink to="/">Burrito App</TitleLink>{' '}
                 </TitleInfo>
             </WorkingBox>
         </HeaderImageBox>

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { commonStyles } from './HeaderImage'
 import { useTranslation } from 'react-i18next'
+import { screenWidth } from '../../styles/mediaQueries'
 
-const QuoteFlex = styled.div`
+const QuoteContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -38,19 +39,30 @@ const QouteBottom = styled.img`
 
 const Quote = styled.p`
     color: var(--color-white);
+
+    @media ${screenWidth.lg} {
+        font-size: 2rem;
+        padding: 0.3em;
+    }
+    @media ${screenWidth.xl} {
+        font-size: 2.2rem;
+        padding: 0.5em;
+    }
 `
 
 function HeaderQoute() {
     const { t } = useTranslation()
     return (
-        <QuoteFlex>
+        <QuoteContainer>
             <QuoteBox>
                 <Quote>{t('quote')}</Quote>
                 <QouteTop src="/images/quote.png" />
                 <QouteBottom src="/images/quote.png" />
             </QuoteBox>
-            <AuthorBox>- Cory House</AuthorBox>
-        </QuoteFlex>
+            <AuthorBox>
+                <Quote>- Cory House</Quote>
+            </AuthorBox>
+        </QuoteContainer>
     )
 }
 

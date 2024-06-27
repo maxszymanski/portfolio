@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 // Supports weights 300-700
 import '@fontsource-variable/fira-code'
+import { screenWidth } from './mediaQueries'
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -9,7 +10,10 @@ const GlobalStyles = createGlobalStyle`
   --color-white: #eef2ff;
   --color-primary: #C778DD;
   --color-gray: #ABB2BF;
-  --color-stone: #4d5158
+  --color-stone: #4d5158;
+  --color-socialLink: #4d51584c;
+  --color-primaryLink: #c778dd33;
+  --color-primaryHover:
 
 }
 
@@ -24,6 +28,8 @@ const GlobalStyles = createGlobalStyle`
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+ 
 }
 
 body {
@@ -33,8 +39,8 @@ body {
   line-height: 1.5;
   font-size: 1.6rem;
   position: relative;
-
   width: 100%;
+
 }
 
 input,

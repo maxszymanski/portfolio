@@ -18,6 +18,7 @@ const SectionLine = styled.div`
     height: 1px;
     width: 100%;
     background-color: var(--color-primary);
+    max-width: 500px;
 `
 
 function SectionHeading({ children }) {

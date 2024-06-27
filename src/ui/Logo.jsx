@@ -26,6 +26,9 @@ const LogoLink = styled(Link)`
         font-size: 2.2rem;
         margin-bottom: 4px;
     }
+    @media ${screenWidth.xxl} {
+        font-size: 2.4rem;
+    }
 `
 
 function Logo({ isMobile = false }) {

@@ -8,5 +8,7 @@
     "aboutMe": "About me",
     "workingon": "Currently working on",
     "quote": "Code is like humor. When you have to explain it, it’s bad.",
-    "contactme": "Contact me!"
+    "contactme": "Contact me!",
+    "live": "live ->",
+    "code": "code ->"
 }

@@ -36,9 +36,6 @@ const HeaderImageBox = styled.div`
         margin-top: 0;
         flex-basis: 40%;
     }
-    /* @media ${screenWidth.xl} {
-        flex-basis: 50%;
-    } */
 `
 const HeaderImgSmall = styled.img`
     width: 100%;
@@ -72,9 +69,23 @@ const TitleLink = styled(Link)`
     color: var(--color-primary);
     font-weight: 800;
     transition: color 0.3s;
+    position: relative;
 
-    &:hover {
-        color: #a864bb;
+    @media ${screenWidth.lg} {
+        &:hover::after {
+            width: 100%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: 3px;
+            left: 0;
+            background-color: var(--color-primary);
+            transition: width 0.3s;
+        }
     }
 `
 

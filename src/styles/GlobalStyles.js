@@ -28,7 +28,10 @@ const GlobalStyles = createGlobalStyle`
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+ 
+  @media ${screenWidth.lg} {
+    overflow-x: hidden;
+  }
  
 }
 

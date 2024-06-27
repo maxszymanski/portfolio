@@ -35,7 +35,7 @@ const SocialLink = styled(Link)`
     }
 `
 const Line = styled.div`
-    display: hidden;
+    display: none;
     height: 230px;
     width: 1px;
     background-color: var(--color-gray);

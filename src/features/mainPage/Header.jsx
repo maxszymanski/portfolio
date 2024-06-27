@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import HeaderTitle from './HeaderTitle'
 import HeaderImage from './HeaderImage'
 import HeaderQoute from './HeaderQoute'
@@ -9,7 +9,7 @@ const MainHeader = styled.header`
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 5em 1.5em;
+    padding: 5em 1.5em 2em;
     align-items: center;
 
     @media ${screenWidth.lg} {

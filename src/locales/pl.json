@@ -9,6 +9,7 @@
     "workingon": "Obecnie pracuję nad",
     "quote": "Kod jest jak humor. Jeśli trzeba go wyjaśniać, jest słaby.",
     "contactme": "Skontaktuj się!",
-    "live": "live",
-    "code": "kod"
+    "live": "Live ->",
+    "code": "Kod ->",
+    "appInfo": "Aplikacja do zamawiania jedzenia z restauracji z funkcjami zakładania konta, edycji profilu i przeglądania historii zamówień."
 }

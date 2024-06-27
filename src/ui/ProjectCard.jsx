@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import StyledLink from './StyledLink'
 import { screenWidth } from '../styles/mediaQueries'
+import { useTranslation } from 'react-i18next'
 
 const Card = styled.div`
     display: flex;
@@ -70,6 +71,7 @@ const CardInfo = styled.p`
 `
 
 function ProjectCard() {
+    const { t } = useTranslation()
     return (
         <Card>
             <CardImageBox>
@@ -82,11 +84,7 @@ function ProjectCard() {
             </CardLanguageBox>
             <CardInfoBox>
                 <CardHeading>Burrito App</CardHeading>
-                <CardInfo>
-                    Aplikacja do zamawiania jedzenia z restauracji z funkcjami
-                    zakładania konta, edycji profilu i przeglądania historii
-                    zamówień.
-                </CardInfo>
+                <CardInfo>{t('appInfo')}</CardInfo>
                 <CardLinkBox>
                     <StyledLink text="live"></StyledLink>
                     <StyledLink text="code"></StyledLink>

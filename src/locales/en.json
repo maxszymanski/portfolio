@@ -9,6 +9,7 @@
     "workingon": "Currently working on",
     "quote": "Code is like humor. When you have to explain it, it’s bad.",
     "contactme": "Contact me!",
-    "live": "live ->",
-    "code": "code ->"
+    "live": "Live ->",
+    "code": "Code ->",
+    "appInfo": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history."
 }

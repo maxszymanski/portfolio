@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import i18n from '../../i18n'
 import { screenWidth } from '../styles/mediaQueries'
+import { useAppContext } from '../context/useAppContext'
 
 const Switcher = styled.select`
     background-color: transparent;
@@ -39,16 +40,16 @@ const OptionButton = styled.option`
 `
 
 function LanguageSwitcher() {
+    const { toggleShowNav } = useAppContext()
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang)
+        toggleShowNav()
     }
 
     return (
         <Switcher onChange={(e) => changeLanguage(e.target.value)}>
             <OptionButton value="en">EN</OptionButton>
-            <OptionButton value="pl" onChange={() => changeLanguage('pl')}>
-                PL
-            </OptionButton>
+            <OptionButton value="pl">PL</OptionButton>
         </Switcher>
     )
 }

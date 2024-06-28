@@ -3,6 +3,7 @@ import Section from '../../ui/Section'
 import SectionHeading from '../../ui/SectionHeading'
 import ProjectCard from '../../ui/ProjectCard'
 import styled from 'styled-components'
+import { mainProjects } from '../../locales/projectsData'
 
 const CardsBox = styled.div`
     display: flex;
@@ -19,9 +20,12 @@ function ProjectsSection() {
         <Section>
             <SectionHeading>{t('projects')}</SectionHeading>
             <CardsBox>
+                {mainProjects.map((project) => (
+                    <ProjectCard project={project} key={project.name} />
+                ))}
+                {/* <ProjectCard />
                 <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                <ProjectCard /> */}
             </CardsBox>
         </Section>
     )

@@ -5,8 +5,10 @@ const AppContext = createContext()
 const AppProvider = ({ children }) => {
     const [showNav, setShowNav] = useState(false)
 
+    const mobileScreen = window.innerWidth < 1024
+
     const toggleShowNav = () => {
-        setShowNav((is) => !is)
+        mobileScreen && setShowNav((is) => !is)
     }
 
     useEffect(() => {

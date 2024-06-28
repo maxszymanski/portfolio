@@ -11,5 +11,8 @@
     "contactme": "Contact me!",
     "live": "Live ->",
     "code": "Code ->",
-    "appInfo": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history."
+    "paintedSmile": "Painted Smile",
+    "aboutBurrito": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history.",
+    "aboutPainted": "Children's animation company website, created in Astro, with an intuitive interface, information about services and a photo gallery.",
+    "aboutEltom": "A website for an electrical company, designed and created by me, with a modern design, information about services and a contact form."
 }

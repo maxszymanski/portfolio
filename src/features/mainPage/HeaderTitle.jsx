@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import { screenWidth } from '../../styles/mediaQueries'
-
+import { MdOutlineWavingHand } from 'react-icons/md'
 import StyledLink from '../../ui/StyledLink'
 
 const TitleBox = styled.div`
@@ -23,6 +23,7 @@ const TitleBox = styled.div`
 `
 
 const Title = styled.h1`
+    position: relative;
     font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 1em;
@@ -56,12 +57,17 @@ const TitleText = styled.p`
     }
 `
 
+const Hand = styled(MdOutlineWavingHand)`
+    color: var(--color-primary);
+    margin-bottom: -0.1em;
+`
+
 function HeaderTitle() {
     const { t } = useTranslation()
     return (
         <TitleBox>
             <Title>
-                {t('hi')} 👋
+                {t('hi')} <Hand />
                 <br />
                 {t('welcome')} <br /> <TitleSpan>front-end developer</TitleSpan>
             </Title>

@@ -11,5 +11,8 @@
     "contactme": "Skontaktuj się!",
     "live": "Live ->",
     "code": "Kod ->",
-    "appInfo": "Aplikacja do zamawiania jedzenia z restauracji z funkcjami zakładania konta, edycji profilu i przeglądania historii zamówień."
+    "paintedSmile": "Malowany Uśmiech",
+    "aboutBurrito": "Aplikacja do zamawiania jedzenia z restauracji z funkcjami zakładania konta, edycji profilu i przeglądania historii zamówień.",
+    "aboutPainted": "Strona internetowa firmy z animacjami dla dzieci, stworzona w Astro, z intuicyjnym interfejsem, informacjami o usługach i galerią zdjęć.",
+    "aboutEltom": "Strona internetowa firmy elektrycznej, zaprojektowana i stworzona przeze mnie, z nowoczesnym designem, informacjami o usługach i formularzem kontaktowym."
 }

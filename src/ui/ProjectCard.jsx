@@ -59,7 +59,11 @@ const CardLinkBox = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0.5em;
-    gap: 2em;
+    gap: 1em;
+
+    @media ${screenWidth.small} {
+        gap: 2em;
+    }
 `
 
 const CardHeading = styled.h3`
@@ -68,26 +72,30 @@ const CardHeading = styled.h3`
 `
 const CardInfo = styled.p`
     line-height: 170%;
+    padding: 0.3em 0;
 `
 
-function ProjectCard() {
+function ProjectCard({ project }) {
     const { t } = useTranslation()
+    const { name, image, stack, info, liveLink, codeLink } = project
+
+    const paintedSmileCard = name === 'paintedSmile'
     return (
         <Card>
             <CardImageBox>
-                <CardImage src="/images/burrito.webp" />
+                <CardImage src={image} />
             </CardImageBox>
             <CardLanguageBox>
-                <CardInfo>
-                    React Supabase Tanstack-Query Redux Tailwind
-                </CardInfo>
+                <CardInfo>{stack}</CardInfo>
             </CardLanguageBox>
             <CardInfoBox>
-                <CardHeading>Burrito App</CardHeading>
-                <CardInfo>{t('appInfo')}</CardInfo>
+                <CardHeading>
+                    {paintedSmileCard ? t(`${name}`) : name}{' '}
+                </CardHeading>
+                <CardInfo>{t(`${info}`)}</CardInfo>
                 <CardLinkBox>
-                    <StyledLink text="live"></StyledLink>
-                    <StyledLink text="code"></StyledLink>
+                    <StyledLink text="live" to={liveLink}></StyledLink>
+                    <StyledLink text="code" to={codeLink}></StyledLink>
                 </CardLinkBox>
             </CardInfoBox>
         </Card>

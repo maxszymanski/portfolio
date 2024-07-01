@@ -10,6 +10,9 @@ const PrimaryLink = styled(Link)`
     background-color: transparent;
     transition: background-color 0.3s;
     border-radius: 2px;
+    border-color: ${(props) =>
+        props.$isPrimary ? 'var(--color-primary)' : 'var(--color-gray)'};
+
     &:hover {
         background-color: var(--color-primaryLink);
     }
@@ -25,10 +28,16 @@ const PrimaryLink = styled(Link)`
     }
 `
 
-function StyledLink({ text, to, isMobile = false }) {
+function StyledLink({ text, to, isMobile = false, isPrimary = true }) {
     const { t } = useTranslation()
     return (
-        <PrimaryLink to={to} $isMobile={isMobile}>
+        <PrimaryLink
+            to={to}
+            $isMobile={isMobile}
+            $isPrimary={isPrimary}
+            target="_blank"
+            rel="noopener"
+        >
             {t(text)}
         </PrimaryLink>
     )

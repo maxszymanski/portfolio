@@ -6,7 +6,7 @@ const CardSkill = styled.div`
     border: 1px solid var(--color-gray);
     border-radius: 2px;
 
-    @media ${screenWidth.lg} {
+    @media ${screenWidth.sm} {
         min-width: 230px;
         max-width: 275px;
     }
@@ -16,6 +16,7 @@ const SkillCardTitle = styled.h3`
     font-weight: 400;
     padding: 0.5em 0.8em;
     font-size: 1.7rem;
+    text-align: center;
 `
 const SkillCardInfo = styled.p`
     color: var(--color-gray);

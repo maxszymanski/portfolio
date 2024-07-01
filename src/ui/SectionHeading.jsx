@@ -4,19 +4,32 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { TitleLink } from '../features/mainPage/HeaderImage'
 import { screenWidth } from '../styles/mediaQueries'
+import ViewAllLink from './ViewAllLink'
 
 const HeadingContainer = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-bottom: 4em;
-    padding-top: 1em;
-    gap: 0.5em;
+
+    @media ${screenWidth.sm} {
+        font-size: 2.8rem;
+    }
+`
+
+const HeadingBox = styled.div`
+    width: 100%;
+    gap: 1em;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
 `
 
 const HeadingSection = styled.h2`
     color: var(--color-white);
     font-weight: 500;
     font-size: 2rem;
+    flex-shrink: 0;
 
     &::first-letter {
         color: var(--color-primary);
@@ -25,37 +38,17 @@ const HeadingSection = styled.h2`
     @media ${screenWidth.small} {
         font-size: 2.2rem;
     }
+    @media ${screenWidth.sm} {
+        font-size: 2.8rem;
+    }
 `
 const SectionLine = styled.div`
     height: 1px;
     width: 100%;
     background-color: var(--color-primary);
-    max-width: 500px;
-`
-
-const SectionLink = styled(Link)`
-    font-size: 1.2rem;
-    padding: 0.3em;
-    flex-shrink: 0;
-    color: var(--color-white);
-    position: relative;
-
-    @media ${screenWidth.lg} {
-        &:hover::after {
-            width: 100%;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 1px;
-            bottom: 3px;
-            left: 0;
-            background-color: var(--color-white);
-            transition: width 0.3s;
-        }
-    }
+    /* @media ${screenWidth.lg} {
+        max-width: 700px;
+    } */
 `
 
 function SectionHeading({ title, to }) {
@@ -64,11 +57,11 @@ function SectionHeading({ title, to }) {
 
     return (
         <HeadingContainer>
-            <HeadingSection>#{t(title)}</HeadingSection>
-            <SectionLine />
-            {projectsSection && (
-                <SectionLink to={to}>{t('viewAll')}</SectionLink>
-            )}
+            <HeadingBox>
+                <HeadingSection>#{t(title)}</HeadingSection>
+                <SectionLine />
+            </HeadingBox>
+            {projectsSection && <ViewAllLink />}
         </HeadingContainer>
     )
 }

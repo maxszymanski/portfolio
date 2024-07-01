@@ -40,14 +40,13 @@ const OptionButton = styled.option`
 `
 
 function LanguageSwitcher() {
-    const { toggleShowNav } = useAppContext()
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang)
-        toggleShowNav()
-    }
+    const { appLanguage, changeLanguage } = useAppContext()
 
     return (
-        <Switcher onChange={(e) => changeLanguage(e.target.value)}>
+        <Switcher
+            onChange={(e) => changeLanguage(e.target.value)}
+            value={appLanguage}
+        >
             <OptionButton value="en">EN</OptionButton>
             <OptionButton value="pl">PL</OptionButton>
         </Switcher>

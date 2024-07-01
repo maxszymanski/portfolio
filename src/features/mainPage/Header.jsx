@@ -4,16 +4,20 @@ import HeaderImage from './HeaderImage'
 import HeaderQoute from './HeaderQoute'
 import { screenWidth } from '../../styles/mediaQueries'
 import RotatedSquare from '../../ui/RotatedSquare'
+import { Container } from '../../ui/Container'
 
 const MainHeader = styled.header`
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 5em 1.5em 0;
     align-items: center;
+    padding: 5em 1.5em 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 
     @media ${screenWidth.lg} {
-        padding: 8em 2em 5em;
+        padding: 8em 2em 0;
     }
     @media ${screenWidth.xl} {
         padding-top: 10em;

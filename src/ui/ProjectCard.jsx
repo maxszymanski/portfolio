@@ -36,6 +36,7 @@ const CardImageBox = styled.div`
 const CardImage = styled.img`
     height: 200px;
     object-fit: fill;
+    border-bottom: solid 1px var(--color-gray);
 
     @media ${screenWidth.small} {
         height: 250px;
@@ -44,8 +45,7 @@ const CardImage = styled.img`
 
 const CardLanguageBox = styled.div`
     padding: 0.3em 1em;
-    border-top: solid 1px var(--color-gray);
-    border-bottom: solid 1px var(--color-gray);
+
     color: var(--color-gray);
 `
 const CardInfoBox = styled.div`
@@ -54,6 +54,7 @@ const CardInfoBox = styled.div`
     justify-content: space-between;
     padding: 1em 1em 1.5em;
     gap: 1.5em;
+    border-top: solid 1px var(--color-gray);
 `
 
 const CardLinkBox = styled.div`
@@ -98,7 +99,11 @@ function ProjectCard({ project }) {
                 <CardInfo>{t(`${info}`)}</CardInfo>
                 <CardLinkBox>
                     <StyledLink text="live" to={liveLink}></StyledLink>
-                    <StyledLink text="code" to={codeLink}></StyledLink>
+                    <StyledLink
+                        text="code"
+                        to={codeLink}
+                        isPrimary={false}
+                    ></StyledLink>
                 </CardLinkBox>
             </CardInfoBox>
         </Card>

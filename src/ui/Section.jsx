@@ -1,13 +1,24 @@
 import styled from 'styled-components'
 import SectionHeading from './SectionHeading'
+import { screenWidth } from '../styles/mediaQueries'
 
 const SectionBox = styled.section`
-    padding: 4em 1.5em 0;
+    padding: 4.5em 1.5em 0em;
+
+    @media ${screenWidth.lg} {
+        padding-top: 6em;
+    }
+    @media ${screenWidth.xl} {
+        padding-top: 8em;
+    }
+    @media ${screenWidth.xxl} {
+        padding-top: 9em;
+    }
 `
 
-function Section({ to, children }) {
+function Section({ to, children, sectionId = null }) {
     return (
-        <SectionBox>
+        <SectionBox id={to}>
             <SectionHeading to={to} title={to} />
             {children}
         </SectionBox>

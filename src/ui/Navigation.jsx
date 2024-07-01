@@ -47,6 +47,9 @@ const NavContainer = styled.div`
         max-width: 1440px;
         margin: 0 auto;
     }
+    @media ${screenWidth.xxl} {
+        padding: 0 1.5em;
+    }
 `
 
 const NavList = styled.ul`

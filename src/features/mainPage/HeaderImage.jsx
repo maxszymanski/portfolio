@@ -104,7 +104,14 @@ function HeaderImage() {
             <WorkingBox>
                 <Square />
                 <TitleInfo>
-                    {t('workingon')} <TitleLink to="/">Burrito App</TitleLink>{' '}
+                    {t('workingon')}{' '}
+                    <TitleLink
+                        target="_blank"
+                        rel="noopener"
+                        to="https://tastyburrito.netlify.app/"
+                    >
+                        Burrito App
+                    </TitleLink>{' '}
                 </TitleInfo>
             </WorkingBox>
         </HeaderImageBox>

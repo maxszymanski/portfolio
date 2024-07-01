@@ -4,7 +4,7 @@ import { screenWidth } from '../styles/mediaQueries'
 const position = {
     left: css`
         left: 5em;
-        bottom: 3em;
+        bottom: 0;
         rotate: 45deg;
         height: 80px;
         width: 80px;
@@ -13,7 +13,7 @@ const position = {
     `,
     right: css`
         right: -4em;
-        bottom: 8em;
+        bottom: 4em;
         rotate: 10deg;
         height: 120px;
         width: 120px;

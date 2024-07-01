@@ -1,14 +1,38 @@
 import { createContext, useEffect, useState } from 'react'
+import i18n from '../../i18n'
 
 const AppContext = createContext()
 
 const AppProvider = ({ children }) => {
     const [showNav, setShowNav] = useState(false)
-
-    const mobileScreen = window.innerWidth < 1024
+    const [appLanguage, setAppLanguage] = useState('en')
 
     const toggleShowNav = () => {
+        const mobileScreen = window.innerWidth < 1024
         mobileScreen && setShowNav((is) => !is)
+    }
+
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('appLanguage')
+
+        if (savedLanguage) {
+            setAppLanguage(savedLanguage)
+            i18n.changeLanguage(savedLanguage)
+        } else {
+            const systemLanguage = navigator.language.startsWith('pl')
+                ? 'pl'
+                : 'en'
+            setAppLanguage(systemLanguage)
+            i18n.changeLanguage(systemLanguage)
+            localStorage.setItem('appLanguage', systemLanguage)
+        }
+    }, [])
+
+    const changeLanguage = (lang) => {
+        setAppLanguage(lang)
+        i18n.changeLanguage(lang)
+        localStorage.setItem('appLanguage', lang)
+        toggleShowNav()
     }
 
     useEffect(() => {
@@ -31,6 +55,8 @@ const AppProvider = ({ children }) => {
                 showNav,
                 toggleShowNav,
                 setShowNav,
+                appLanguage,
+                changeLanguage,
             }}
         >
             {children}

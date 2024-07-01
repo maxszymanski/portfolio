@@ -8,7 +8,7 @@ const Card = styled.div`
     flex-direction: column;
     justify-content: space-between;
     max-width: 380px;
-    color: var(--color-gray);
+
     border: solid 1px var(--color-gray);
     border-radius: 2px;
     overflow: hidden;
@@ -35,6 +35,7 @@ const CardImageBox = styled.div`
 
 const CardImage = styled.img`
     height: 200px;
+    object-fit: fill;
 
     @media ${screenWidth.small} {
         height: 250px;
@@ -45,6 +46,7 @@ const CardLanguageBox = styled.div`
     padding: 0.3em 1em;
     border-top: solid 1px var(--color-gray);
     border-bottom: solid 1px var(--color-gray);
+    color: var(--color-gray);
 `
 const CardInfoBox = styled.div`
     display: flex;
@@ -73,6 +75,7 @@ const CardHeading = styled.h3`
 const CardInfo = styled.p`
     line-height: 170%;
     padding: 0.3em 0;
+    color: var(--color-gray);
 `
 
 function ProjectCard({ project }) {

@@ -9,7 +9,7 @@ export const mainProjects = [
     },
     {
         name: 'Porfolio',
-        image: '/images/burrito.webp',
+        image: '/images/portfolio.webp',
         stack: 'React Styled-component PHP',
         info: 'aboutPortfolio',
         liveLink: '/',
@@ -17,7 +17,7 @@ export const mainProjects = [
     },
     {
         name: 'paintedSmile',
-        image: '/images/burrito.webp',
+        image: '/images/painted.webp',
         stack: 'Astro JavaScript PHP Tailwind',
         info: 'aboutPainted',
         liveLink: 'https://malowanyusmiech.pl/',
@@ -26,7 +26,23 @@ export const mainProjects = [
 
     {
         name: 'Eltom',
-        image: '/images/burrito.webp',
+        image: '/images/eltom.webp',
+        stack: 'HTML CSS JavaScript PHP',
+        info: 'aboutEltom',
+        liveLink: 'https://eltom.online/',
+        codeLink: 'https://github.com/maxszymanski/El-Tom',
+    },
+    {
+        name: 'Eltom',
+        image: '/images/eltom.webp',
+        stack: 'HTML CSS JavaScript PHP',
+        info: 'aboutEltom',
+        liveLink: 'https://eltom.online/',
+        codeLink: 'https://github.com/maxszymanski/El-Tom',
+    },
+    {
+        name: 'Eltom',
+        image: '/images/eltom.webp',
         stack: 'HTML CSS JavaScript PHP',
         info: 'aboutEltom',
         liveLink: 'https://eltom.online/',

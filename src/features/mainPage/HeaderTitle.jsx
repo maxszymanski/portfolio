@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import { screenWidth } from '../../styles/mediaQueries'
-import { MdOutlineWavingHand } from 'react-icons/md'
+import { PiHandWavingLight } from 'react-icons/pi'
+
 import StyledLink from '../../ui/StyledLink'
 
 const TitleBox = styled.div`
@@ -57,9 +58,20 @@ const TitleText = styled.p`
     }
 `
 
-const Hand = styled(MdOutlineWavingHand)`
+const Hand = styled(PiHandWavingLight)`
     color: var(--color-primary);
-    margin-bottom: -0.1em;
+    margin-bottom: -0.15em;
+    height: 39px;
+    width: 39px;
+
+    @media ${screenWidth.xl} {
+        height: 38px;
+        width: 38px;
+    }
+    @media ${screenWidth.xl} {
+        height: 44px;
+        width: 44px;
+    }
 `
 
 function HeaderTitle() {

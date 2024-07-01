@@ -30,6 +30,7 @@ const AppProvider = ({ children }) => {
             value={{
                 showNav,
                 toggleShowNav,
+                setShowNav,
             }}
         >
             {children}

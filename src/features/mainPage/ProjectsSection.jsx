@@ -10,22 +10,16 @@ const CardsBox = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2em;
-    padding: 4em 0;
+    gap: 4em;
 `
 
 function ProjectsSection() {
-    const { t } = useTranslation()
     return (
-        <Section>
-            <SectionHeading>{t('projects')}</SectionHeading>
+        <Section to="projects">
             <CardsBox>
                 {mainProjects.map((project) => (
                     <ProjectCard project={project} key={project.name} />
                 ))}
-                {/* <ProjectCard />
-                <ProjectCard />
-                <ProjectCard /> */}
             </CardsBox>
         </Section>
     )

@@ -32,9 +32,9 @@ const LogoLink = styled(Link)`
 `
 
 function Logo({ isMobile = false }) {
-    const { toggleShowNav } = useAppContext()
+    const { setShowNav } = useAppContext()
     return (
-        <LogoLink onClick={toggleShowNav} $isMobile={isMobile}>
+        <LogoLink onClick={() => setShowNav(false)} $isMobile={isMobile}>
             <LogoImage src="/logo.svg"></LogoImage>
             Max
         </LogoLink>

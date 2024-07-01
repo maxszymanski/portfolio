@@ -9,7 +9,7 @@ const MainHeader = styled.header`
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 5em 1.5em 2em;
+    padding: 5em 1.5em 0;
     align-items: center;
 
     @media ${screenWidth.lg} {

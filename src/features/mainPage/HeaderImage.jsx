@@ -65,8 +65,8 @@ export const TitleInfo = styled.p`
     }
 `
 
-const TitleLink = styled(Link)`
-    color: var(--color-primary);
+export const TitleLink = styled(Link)`
+    color: var(--color-white);
     font-weight: 800;
     transition: color 0.3s;
     position: relative;
@@ -83,7 +83,7 @@ const TitleLink = styled(Link)`
             height: 1px;
             bottom: 3px;
             left: 0;
-            background-color: var(--color-primary);
+            background-color: var(--color-white);
             transition: width 0.3s;
         }
     }

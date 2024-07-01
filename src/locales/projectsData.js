@@ -2,7 +2,7 @@ export const mainProjects = [
     {
         name: 'Burrito App',
         image: '/images/burrito.webp',
-        stack: 'React TypeScript Supabase Tanstack-Query Redux Tailwind ',
+        stack: 'React TypeScript Supabase Redux Tanstack-Query Tailwind ',
         info: 'aboutBurrito',
         liveLink: 'https://tastyburrito.netlify.app/',
         codeLink: 'https://github.com/maxszymanski/burrito',
@@ -24,28 +24,12 @@ export const mainProjects = [
         codeLink: 'https://github.com/maxszymanski/painted-smile',
     },
 
-    {
-        name: 'Eltom',
-        image: '/images/eltom.webp',
-        stack: 'HTML CSS JavaScript PHP',
-        info: 'aboutEltom',
-        liveLink: 'https://eltom.online/',
-        codeLink: 'https://github.com/maxszymanski/El-Tom',
-    },
-    {
-        name: 'Eltom',
-        image: '/images/eltom.webp',
-        stack: 'HTML CSS JavaScript PHP',
-        info: 'aboutEltom',
-        liveLink: 'https://eltom.online/',
-        codeLink: 'https://github.com/maxszymanski/El-Tom',
-    },
-    {
-        name: 'Eltom',
-        image: '/images/eltom.webp',
-        stack: 'HTML CSS JavaScript PHP',
-        info: 'aboutEltom',
-        liveLink: 'https://eltom.online/',
-        codeLink: 'https://github.com/maxszymanski/El-Tom',
-    },
+    // {
+    //     name: 'Eltom',
+    //     image: '/images/eltom.webp',
+    //     stack: 'HTML CSS JavaScript PHP',
+    //     info: 'aboutEltom',
+    //     liveLink: 'https://eltom.online/',
+    //     codeLink: 'https://github.com/maxszymanski/El-Tom',
+    // },
 ]

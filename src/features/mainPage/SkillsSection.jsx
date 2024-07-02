@@ -52,7 +52,6 @@ const SkillBoxs = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: baseline; */
     margin-top: 3em;
     gap: 2em;
 

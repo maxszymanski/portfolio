@@ -98,11 +98,16 @@ function ProjectCard({ project }) {
                 </CardHeading>
                 <CardInfo>{t(`${info}`)}</CardInfo>
                 <CardLinkBox>
-                    <StyledLink text="live" to={liveLink}></StyledLink>
+                    <StyledLink
+                        text="live"
+                        to={liveLink}
+                        target="_blank"
+                    ></StyledLink>
                     <StyledLink
                         text="code"
                         to={codeLink}
                         isPrimary={false}
+                        target="_blank"
                     ></StyledLink>
                 </CardLinkBox>
             </CardInfoBox>

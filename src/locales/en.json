@@ -23,5 +23,10 @@
     "frameworks": "Frameworks",
     "tools": "Tools",
     "database": "Database and Libraries",
-    "other": "Other"
+    "other": "Other",
+    "aboutHello": "Hello, I'm Max!",
+    "aboutmeone": "I am a front-end developer with one and a half years of experience. My adventure with coding started out of curiosity and turned into a passion. I have worked on a variety of projects, from simple business card pages to advanced web applications, gaining valuable experience with clients.",
+    "aboutmetwo": "I create responsive, intuitive and aesthetically pleasing websites and web applications, taking care of every detail from interface design to implementation of the finished product.",
+    "aboutmethree": "I am open to new challenges and always ready to learn, believing that technical proficiency, creativity and continuous development are key to success in this industry.",
+    "readmore": "Read more ->"
 }

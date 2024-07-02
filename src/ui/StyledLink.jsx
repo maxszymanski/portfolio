@@ -28,14 +28,20 @@ const PrimaryLink = styled(Link)`
     }
 `
 
-function StyledLink({ text, to, isMobile = false, isPrimary = true }) {
+function StyledLink({
+    text,
+    to,
+    isMobile = false,
+    isPrimary = true,
+    target = 'blank',
+}) {
     const { t } = useTranslation()
     return (
         <PrimaryLink
             to={to}
             $isMobile={isMobile}
             $isPrimary={isPrimary}
-            target="_blank"
+            target={target}
             rel="noopener"
         >
             {t(text)}

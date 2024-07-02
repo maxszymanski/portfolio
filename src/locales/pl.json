@@ -23,5 +23,10 @@
     "frameworks": "Frameworki",
     "tools": "Narzędzia",
     "database": "Bazy danych i biblioteki",
-    "other": "Inne"
+    "other": "Inne",
+    "aboutHello": "Cześć, jestem Max!",
+    "aboutmeone": "Jestem front-end developerem z półtorarocznym doświadczeniem. Moja przygoda z kodowaniem rozpoczęła się z ciekawości, a przerodziła się w pasję. Pracowałem nad różnorodnymi projektami, od prostych stron wizytówek po zaawansowane aplikacje webowe, zdobywając cenne doświadczenie z klientami.",
+    "aboutmetwo": "Tworzę responsywne, intuicyjne i estetyczne strony oraz aplikacje internetowe, dbając o każdy szczegół od projektowania interfejsu po wdrożenie gotowego produktu.",
+    "aboutmethree": "Jestem otwarty na nowe wyzwania i zawsze gotowy do nauki, wierząc, że że techniczna biegłość, kreatywność oraz nieustanny rozwój są kluczowe dla sukcesu w tej branży.",
+    "readmore": "Czytaj więcej ->"
 }

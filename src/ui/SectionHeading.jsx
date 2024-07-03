@@ -41,14 +41,17 @@ const HeadingSection = styled.h2`
     @media ${screenWidth.sm} {
         font-size: 2.8rem;
     }
+    @media ${screenWidth.lg} {
+        font-size: 3rem;
+    }
+    @media ${screenWidth.xl} {
+        font-size: 3.2rem;
+    }
 `
 const SectionLine = styled.div`
     height: 1px;
     width: 100%;
     background-color: var(--color-primary);
-    /* @media ${screenWidth.lg} {
-        max-width: 700px;
-    } */
 `
 
 function SectionHeading({ title, to }) {

@@ -16,9 +16,9 @@ const SectionBox = styled.section`
     }
 `
 
-function Section({ to, children, sectionId = null }) {
+function Section({ to, children }) {
     return (
-        <SectionBox id={to}>
+        <SectionBox>
             <SectionHeading to={to} title={to} />
             {children}
         </SectionBox>

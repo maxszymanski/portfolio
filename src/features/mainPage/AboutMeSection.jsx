@@ -13,9 +13,18 @@ const SectionContainer = styled.div`
         flex-direction: row;
         align-items: center;
     }
+
     @media ${screenWidth.lg} {
         gap: 4em;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        margin-top: -0.8em;
+    }
+    @media ${screenWidth.xl} {
+        justify-content: space-between;
+        margin-top: -4.5em;
+    }
+    @media ${screenWidth.xxl} {
+        margin-top: -5em;
     }
 `
 
@@ -34,7 +43,8 @@ const Image = styled.img`
         max-width: 40%;
     }
     @media ${screenWidth.xl} {
-        max-width: 60%;
+        max-width: 100%;
+        min-height: 600px;
     }
 `
 
@@ -45,13 +55,18 @@ const TextBox = styled.div`
     gap: 2em;
     color: var(--color-gray);
 
-    @media ${screenWidth.xl} {
-        max-width: 40%;
+    @media ${screenWidth.lg} {
+        max-width: 60%;
+        align-items: flex-start;
     }
 `
 
 const RowText = styled.p`
     line-height: 2.6rem;
+
+    @media ${screenWidth.xl} {
+        font-size: 1.8rem;
+    }
 `
 
 function AboutMeSection() {

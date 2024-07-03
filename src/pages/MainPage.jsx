@@ -1,4 +1,5 @@
 import AboutMeSection from '../features/mainPage/AboutMeSection'
+import ContactsSection from '../features/mainPage/ContactsSection'
 import Header from '../features/mainPage/Header'
 import ProjectsSection from '../features/mainPage/ProjectsSection'
 import SkillsSection from '../features/mainPage/SkillsSection'
@@ -11,9 +12,10 @@ function MainPage() {
             <Header />
             <Main>
                 <Container>
-                    <ProjectsSection sectionId="projects" />
+                    <ProjectsSection />
                     <SkillsSection />
                     <AboutMeSection />
+                    <ContactsSection />
                 </Container>
             </Main>
         </>

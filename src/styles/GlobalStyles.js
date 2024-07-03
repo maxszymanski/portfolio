@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
   --color-stone: #4d5158;
   --color-socialLink: #4d51584c;
   --color-primaryLink: #c778dd33;
-  --color-primaryHover:
+ 
 
 }
 

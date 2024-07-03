@@ -4,10 +4,11 @@ import styled from 'styled-components'
 import { screenWidth } from '../styles/mediaQueries'
 
 const PrimaryLink = styled(Link)`
-    border: 1px solid var(--color-primary);
+    border: 1px solid;
     padding: 0.5em 1em;
     display: ${(props) => (props.$isMobile ? 'none' : 'inline-block')};
     background-color: transparent;
+    color: var(--color-white);
     transition: background-color 0.3s;
     border-radius: 2px;
     border-color: ${(props) =>
@@ -24,7 +25,7 @@ const PrimaryLink = styled(Link)`
         font-size: 1.8rem;
     }
     @media ${screenWidth.xxl} {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 `
 

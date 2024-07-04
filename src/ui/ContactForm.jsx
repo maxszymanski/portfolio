@@ -8,7 +8,7 @@ const commonStyles = css`
     border: 1px solid var(--color-gray);
     border-radius: 2px;
     width: 100%;
-    padding: 0.5em 0.8em;
+    padding: 0.7em;
     outline: none;
     margin-bottom: 0.3em;
 
@@ -26,6 +26,7 @@ const FormBox = styled.form`
     width: 100%;
     border-radius: 2px;
     max-width: 400px;
+    font-size: 1.4rem;
 `
 
 const RowBox = styled.div`

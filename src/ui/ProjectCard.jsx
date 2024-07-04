@@ -74,7 +74,7 @@ const CardHeading = styled.h3`
     font-size: 2.4rem;
 `
 const CardInfo = styled.p`
-    line-height: 170%;
+    line-height: 2.6rem;
     padding: 0.3em 0;
     color: var(--color-gray);
 `

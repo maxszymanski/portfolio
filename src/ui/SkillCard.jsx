@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import { screenWidth } from '../styles/mediaQueries'
 
-const CardSkill = styled.div`
+export const CardSkill = styled.div`
     border: 1px solid var(--color-gray);
     border-radius: 2px;
 

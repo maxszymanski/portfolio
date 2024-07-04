@@ -8,7 +8,11 @@ const SectionContainer = styled.div`
     display: flex;
     flex-direction: column-reverse;
     gap: 3em;
+    align-items: center;
 
+    @media ${screenWidth.sm} {
+        align-items: center;
+    }
     @media ${screenWidth.md} {
         flex-direction: row;
         align-items: center;

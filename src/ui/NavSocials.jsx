@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { screenWidth } from '../styles/mediaQueries'
+import { SocialLink } from './SocialLink'
 
 const SocialBox = styled.div`
     display: flex;
@@ -26,14 +27,6 @@ const SocialBox = styled.div`
     }
 `
 
-const SocialLink = styled(Link)`
-    padding: 0.1em;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    &:hover {
-        background-color: var(--color-socialLink);
-    }
-`
 const Line = styled.div`
     display: none;
     height: 230px;

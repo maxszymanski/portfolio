@@ -3,7 +3,6 @@ import ContactsSection from '../features/mainPage/ContactsSection'
 import Header from '../features/mainPage/Header'
 import ProjectsSection from '../features/mainPage/ProjectsSection'
 import SkillsSection from '../features/mainPage/SkillsSection'
-import { Container } from '../ui/Container'
 import Main from '../ui/Main'
 
 function MainPage() {
@@ -11,12 +10,10 @@ function MainPage() {
         <>
             <Header />
             <Main>
-                <Container>
-                    <ProjectsSection />
-                    <SkillsSection />
-                    <AboutMeSection />
-                    <ContactsSection />
-                </Container>
+                <ProjectsSection />
+                <SkillsSection />
+                <AboutMeSection />
+                <ContactsSection />
             </Main>
         </>
     )

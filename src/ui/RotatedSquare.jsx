@@ -31,7 +31,7 @@ const RotatedSquare = styled.div`
     animation-iteration-count: infinite;
     ${(props) => position[props.$position] + ';'}
 
-    @media ${screenWidth.lg} {
+    @media ${screenWidth.xl} {
         display: block;
     }
     @keyframes rotateSquareLeft {

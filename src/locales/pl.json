@@ -29,5 +29,14 @@
     "aboutmetwo": "Tworzę responsywne, intuicyjne i estetyczne strony oraz aplikacje internetowe, dbając o każdy szczegół od projektowania interfejsu po wdrożenie gotowego produktu.",
     "aboutmethree": "Jestem otwarty na nowe wyzwania i zawsze gotowy do nauki, wierząc, że techniczna biegłość, kreatywność oraz nieustanny rozwój są kluczowe dla sukcesu w tej branży.",
     "readmore": "Czytaj więcej ->",
-    "contactText": "Masz pytania dotyczące mojej pracy, chcesz nawiązać współpracę lub zatrudnić mnie do swojego projektu? Skontaktuj się ze mną! Jestem otwarty na nowe wyzwania i chętnie odpowiem na wszelkie pytania."
+    "contactText": "Masz pytania dotyczące mojej pracy, chcesz nawiązać współpracę lub zatrudnić mnie do swojego projektu? Skontaktuj się ze mną! Chętnie odpowiem na wszelkie pytania.",
+    "contactMe": "Napisz do mnie",
+    "labelName": "Imię / Nazwa firmy",
+    "labelEmail": "Email",
+    "labelMessage": "Wiadomość",
+    "send": "Wyślij",
+    "errorName": "Proszę podać imię lub nazwę firmy",
+    "errorEmail": "Proszę podać poprawny adres email",
+    "errorMessage": "Proszę wprowadzić tekst wiadomości",
+    "contactDetails": "Dane kontaktowe"
 }

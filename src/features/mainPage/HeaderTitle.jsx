@@ -49,6 +49,7 @@ export const TitleSpan = styled.span`
 
 const TitleText = styled.p`
     color: var(--color-gray);
+    line-height: 2.6rem;
 
     @media ${screenWidth.md} {
         margin-bottom: 3em;

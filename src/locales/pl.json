@@ -1,42 +1,68 @@
 {
-    "hi": "Witaj",
-    "welcome": "Jestem Max, doświadczony ",
-    "introduction": "Łączę kreatywność z technologią, dostarczając nowoczesne i efektywne rozwiązania webowe.",
-    "home": "Strona główna",
-    "projects": "Projekty",
-    "contact": "Kontakt",
-    "aboutMe": "O mnie",
-    "workingon": "Obecnie pracuję nad",
-    "quote": "Kod jest jak humor. Jeśli trzeba go wyjaśniać, jest słaby.",
-    "contactme": "Skontaktuj się!",
-    "live": "Live ->",
-    "code": "Kod ->",
-    "paintedSmile": "Malowany Uśmiech",
-    "aboutBurrito": "Aplikacja do zamawiania jedzenia z restauracji z funkcjami zakładania konta, edycji profilu i przeglądania historii zamówień.",
-    "aboutPainted": "Strona internetowa firmy z animacjami dla dzieci, z intuicyjnym interfejsem, informacjami o usługach i galerią zdjęć.",
-    "aboutPortfolio": "Strona portfolio, zawierająca szczegółowe opisy moich projektów, informacje o mnie oraz dane kontaktowe wraz z formularzem. ",
-    "aboutEltom": "Strona internetowa firmy elektrycznej, z nowoczesnym designem, informacjami o usługach i formularzem kontaktowym.",
-    "viewAll": "Zobacz wszystkie ->",
-    "skills": "Umiejętności",
-    "aboutme": "O mnie",
-    "languages": "Języki",
-    "frameworks": "Frameworki",
-    "tools": "Narzędzia",
-    "database": "Bazy danych i biblioteki",
-    "other": "Inne",
-    "aboutHello": "Cześć, jestem Max!",
-    "aboutmeone": "Jestem front-end developerem z półtorarocznym doświadczeniem. Moja przygoda z kodowaniem rozpoczęła się z ciekawości, a przerodziła się w pasję. Pracowałem nad różnorodnymi projektami, od prostych stron wizytówek po zaawansowane aplikacje webowe, zdobywając cenne doświadczenie z klientami.",
-    "aboutmetwo": "Tworzę responsywne, intuicyjne i estetyczne strony oraz aplikacje internetowe, dbając o każdy szczegół od projektowania interfejsu po wdrożenie gotowego produktu.",
-    "aboutmethree": "Jestem otwarty na nowe wyzwania i zawsze gotowy do nauki, wierząc, że techniczna biegłość, kreatywność oraz nieustanny rozwój są kluczowe dla sukcesu w tej branży.",
-    "readmore": "Czytaj więcej ->",
-    "contactText": "Masz pytania dotyczące mojej pracy, chcesz nawiązać współpracę lub zatrudnić mnie do swojego projektu? Skontaktuj się ze mną! Chętnie odpowiem na wszelkie pytania.",
-    "contactMe": "Napisz do mnie",
-    "labelName": "Imię / Nazwa firmy",
-    "labelEmail": "Email",
-    "labelMessage": "Wiadomość",
-    "send": "Wyślij",
-    "errorName": "Proszę podać imię lub nazwę firmy",
-    "errorEmail": "Proszę podać poprawny adres email",
-    "errorMessage": "Proszę wprowadzić tekst wiadomości",
-    "contactDetails": "Dane kontaktowe"
+    "header": {
+        "hi": "Witaj",
+        "welcome": "Jestem Max, doświadczony ",
+        "introduction": "Łączę kreatywność z technologią, dostarczając nowoczesne i efektywne rozwiązania webowe.",
+        "workingon": "Obecnie pracuję nad",
+        "contactme": "Skontaktuj się!"
+    },
+    "nav": {
+        "home": "Strona główna",
+        "projects": "Projekty",
+        "contact": "Kontakt",
+        "aboutMe": "O mnie"
+    },
+    "section": {
+        "fun": "Ciekawostki",
+        "skills": "Umiejętności"
+    },
+    "aboutMe": {
+        "hello": "Cześć, jestem Max!",
+        "one": "Jestem front-end developerem z półtorarocznym doświadczeniem. Moja przygoda z kodowaniem rozpoczęła się z ciekawości, a przerodziła się w pasję. Pracowałem nad różnorodnymi projektami, od prostych stron wizytówek po zaawansowane aplikacje webowe, zdobywając cenne doświadczenie z klientami.",
+        "two": "Tworzę responsywne, intuicyjne i estetyczne strony oraz aplikacje internetowe, dbając o każdy szczegół od projektowania interfejsu po wdrożenie gotowego produktu.",
+        "three": "Jestem otwarty na nowe wyzwania i zawsze gotowy do nauki, wierząc, że techniczna biegłość, kreatywność oraz nieustanny rozwój są kluczowe dla sukcesu w tej branży.",
+        "more": "Czytaj więcej ->"
+    },
+    "projects": {
+        "paintedSmile": "Malowany Uśmiech",
+        "aboutBurrito": "Aplikacja do zamawiania jedzenia z restauracji z funkcjami zakładania konta, edycji profilu i przeglądania historii zamówień.",
+        "aboutPainted": "Strona internetowa firmy z animacjami dla dzieci, z intuicyjnym interfejsem, informacjami o usługach i galerią zdjęć.",
+        "aboutPortfolio": "Strona portfolio, zawierająca szczegółowe opisy moich projektów, informacje o mnie oraz dane kontaktowe wraz z formularzem. ",
+        "aboutEltom": "Strona internetowa firmy elektrycznej, z nowoczesnym designem, informacjami o usługach i formularzem kontaktowym.",
+        "viewAll": "Zobacz wszystkie ->",
+        "live": "Live ->",
+        "code": "Kod ->"
+    },
+
+    "skills": {
+        "languages": "Języki",
+        "frameworks": "Frameworki",
+        "tools": "Narzędzia",
+        "database": "Bazy danych i biblioteki",
+        "other": "Inne"
+    },
+
+    "contact": {
+        "contactText": "Masz pytania dotyczące mojej pracy, chcesz nawiązać współpracę lub zatrudnić mnie do swojego projektu? Skontaktuj się ze mną! Chętnie odpowiem na wszelkie pytania.",
+        "contactMe": "Napisz do mnie",
+        "labelName": "Imię / Nazwa firmy",
+        "labelEmail": "Email",
+        "labelMessage": "Wiadomość",
+        "send": "Wyślij",
+        "errorName": "Proszę podać imię lub nazwę firmy",
+        "errorEmail": "Proszę podać poprawny adres email",
+        "errorMessage": "Proszę wprowadzić tekst wiadomości",
+        "contactDetails": "Dane kontaktowe"
+    },
+    "fun": {
+        "one": "Kocham włoską kuchnie",
+        "two": "Lubię eksperymentować w kuchni",
+        "three": "Moim ulubionym filmem jest Incepcja",
+        "four": "Lubię rozwiązywać łamigłówki",
+        "five": "Lubię majsterkować i naprawiać różne rzeczy",
+        "six": "Uwielbiam zwiedzać nowe kraje",
+        "seven": "Regularnie jeżdżę na rowerze i gram w piłkę nożną"
+    },
+
+    "quote": "Kod jest jak humor. Jeśli trzeba go wyjaśniać, jest słaby."
 }

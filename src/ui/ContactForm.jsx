@@ -120,25 +120,31 @@ function ContactForm() {
 
     return (
         <FormBox onSubmit={handleSubmit(onSubmit)}>
-            <FormHeading>{t('contactMe')}</FormHeading>
+            <FormHeading>{t('contact.contactMe')}</FormHeading>
             <RowBox>
-                <FormRow label="labelName" error={errors?.name?.message}>
+                <FormRow
+                    label="contact.labelName"
+                    error={errors?.name?.message}
+                >
                     <Input
                         id="name"
                         type="text"
                         autoComplete="off"
                         {...register('name', {
-                            required: `${t('errorName')}`,
+                            required: `${t('contact.errorName')}`,
                         })}
                     />
                 </FormRow>
-                <FormRow label="labelEmail" error={errors?.email?.message}>
+                <FormRow
+                    label="contact.labelEmail"
+                    error={errors?.email?.message}
+                >
                     <Input
                         id="email"
                         type="text"
                         autoComplete="off"
                         {...register('email', {
-                            required: `${t('errorEmail')}`,
+                            required: `${t('contact.errorEmail')}`,
                             pattern: {
                                 value: /\S+@\S+\.\S+/,
                                 message: `${t('errorEmail')}`,
@@ -146,16 +152,19 @@ function ContactForm() {
                         })}
                     />
                 </FormRow>
-                <FormRow label="labelMessage" error={errors?.message?.message}>
+                <FormRow
+                    label="contact.labelMessage"
+                    error={errors?.message?.message}
+                >
                     <TextArea
                         id="message"
                         type="text"
                         {...register('message', {
-                            required: `${t('errorMessage')}`,
+                            required: `${t('contact.errorMessage')}`,
                         })}
                     />
                 </FormRow>
-                <FormButton>{t('send')}</FormButton>
+                <FormButton>{t('contact.send')}</FormButton>
             </RowBox>
         </FormBox>
     )

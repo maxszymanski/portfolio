@@ -104,7 +104,7 @@ function HeaderImage() {
             <WorkingBox>
                 <Square />
                 <TitleInfo>
-                    {t('workingon')}{' '}
+                    {t('header.workingon')}{' '}
                     <TitleLink
                         target="_blank"
                         rel="noopener"

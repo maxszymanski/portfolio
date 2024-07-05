@@ -76,11 +76,11 @@ function AboutMeSection({ mainPage = false }) {
     return (
         <SectionContainer>
             <TextBox>
-                <RowText>{t('aboutHello')}</RowText>
-                <RowText>{t('aboutmeone')}</RowText>
-                <RowText>{t('aboutmetwo')}</RowText>
-                <RowText>{t('aboutmethree')}</RowText>
-                {mainPage && <StyledLink to="/aboutme" text="readmore" />}
+                <RowText>{t('aboutMe.hello')}</RowText>
+                <RowText>{t('aboutMe.one')}</RowText>
+                <RowText>{t('aboutMe.two')}</RowText>
+                <RowText>{t('aboutMe.three')}</RowText>
+                {mainPage && <StyledLink to="/aboutme" text="aboutMe.more" />}
             </TextBox>
             <Image src="./images/about.webp" />
         </SectionContainer>

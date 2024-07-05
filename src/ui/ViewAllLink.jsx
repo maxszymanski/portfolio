@@ -24,7 +24,7 @@ function ViewAllLink({ isMobile = false }) {
     const { t } = useTranslation()
     return (
         <SectionProjectLink $isMobile={isMobile} to="/projects">
-            {t('viewAll')}
+            {t('projects.viewAll')}
         </SectionProjectLink>
     )
 }

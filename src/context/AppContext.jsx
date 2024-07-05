@@ -6,6 +6,7 @@ const AppContext = createContext()
 const AppProvider = ({ children }) => {
     const [showNav, setShowNav] = useState(false)
     const [appLanguage, setAppLanguage] = useState('en')
+    const [hasBorder, setHasBorder] = useState(false)
 
     const toggleShowNav = () => {
         const mobileScreen = window.innerWidth < 1024
@@ -49,6 +50,22 @@ const AppProvider = ({ children }) => {
         }
     }, [showNav])
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setHasBorder(true)
+            } else {
+                setHasBorder(false)
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll)
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     return (
         <AppContext.Provider
             value={{
@@ -57,6 +74,7 @@ const AppProvider = ({ children }) => {
                 setShowNav,
                 appLanguage,
                 changeLanguage,
+                hasBorder,
             }}
         >
             {children}

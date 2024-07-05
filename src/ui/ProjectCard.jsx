@@ -83,7 +83,7 @@ function ProjectCard({ project }) {
     const { t } = useTranslation()
     const { name, image, stack, info, liveLink, codeLink } = project
 
-    const paintedSmileCard = name === 'paintedSmile'
+    const paintedSmileCard = name === 'projects.paintedSmile'
     return (
         <Card>
             <CardImageBox>
@@ -99,12 +99,12 @@ function ProjectCard({ project }) {
                 <CardInfo>{t(`${info}`)}</CardInfo>
                 <CardLinkBox>
                     <StyledLink
-                        text="live"
+                        text="projects.live"
                         to={liveLink}
                         target="_blank"
                     ></StyledLink>
                     <StyledLink
-                        text="code"
+                        text="projects.code"
                         to={codeLink}
                         isPrimary={false}
                         target="_blank"

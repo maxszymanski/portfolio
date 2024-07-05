@@ -58,7 +58,7 @@ function ContactSection() {
     return (
         <ContactContainer>
             <Box>
-                <ContactText>{t('contactText')}</ContactText>
+                <ContactText>{t('contact.contactText')}</ContactText>
                 <ContactInfo inContactSection />
             </Box>
             <ContactForm />

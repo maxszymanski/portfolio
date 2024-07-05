@@ -49,12 +49,18 @@ const SkillContainer = styled.div`
 const SkillBoxs = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin-top: 3em;
     gap: 2em;
 
+    @media ${screenWidth.sm} {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     @media ${screenWidth.md} {
         flex-direction: row;
+        justify-content: stretch;
+        flex-wrap: nowrap;
         align-items: baseline;
         margin-top: 0;
     }
@@ -68,6 +74,14 @@ const SkillColumn = styled.div`
     flex-direction: column;
     gap: 2em;
 
+    @media ${screenWidth.sm} {
+        flex-direction: row;
+        align-items: center;
+    }
+    @media ${screenWidth.md} {
+        flex-direction: column;
+        align-items: stretch;
+    }
     @media ${screenWidth.xxl} {
         gap: 2.5em;
     }
@@ -79,19 +93,25 @@ function SkillSection() {
             <SkillImage src="./images/skills-img.webp" alt="section logo" />
             <SkillBoxs>
                 <SkillColumn>
-                    <SkillCard title="languages" info="JavaScript TypeScript" />
+                    <SkillCard
+                        title="skills.languages"
+                        info="JavaScript TypeScript"
+                    />
                 </SkillColumn>
                 <SkillColumn>
-                    <SkillCard title="frameworks" info="React Astro" />
-                    <SkillCard title="tools" info="VSCode Figma Git SCSS" />
+                    <SkillCard title="skills.frameworks" info="React Astro" />
+                    <SkillCard
+                        title="skills.tools"
+                        info="VSCode Figma Git SCSS"
+                    />
                 </SkillColumn>
                 <SkillColumn>
                     <SkillCard
-                        title="database"
+                        title="skills.database"
                         info="Supabase Tanstack-Query Redux Styled-component Tailwind "
                     />
                     <SkillCard
-                        title="other"
+                        title="skills.other"
                         info="react-hook-forms i18n react-router react-icons
                     react-hot-toast"
                     />

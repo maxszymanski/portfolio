@@ -3,7 +3,7 @@ import SkillSection from '../../ui/SkillSection'
 
 function HomeSkillsSection() {
     return (
-        <Section to="skills" mainPage>
+        <Section to="section.skills" mainPage>
             <SkillSection />
         </Section>
     )

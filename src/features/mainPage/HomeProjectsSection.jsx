@@ -30,7 +30,7 @@ const CardsBox = styled.div`
 
 function HomeProjectsSection() {
     return (
-        <Section to="projects" mainPage>
+        <Section to="nav.projects" mainPage>
             <CardsBox>
                 {mainProjects.map((project) => (
                     <ProjectCard project={project} key={project.name} />

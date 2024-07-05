@@ -1,42 +1,68 @@
 {
-    "hi": "Hello",
-    "welcome": "I'm Max, an experienced ",
-    "introduction": "I combine creativity with technology, delivering modern and effective web solutions.",
-    "home": "Home",
-    "projects": "Projects",
-    "contact": "Contact",
-    "aboutMe": "About me",
-    "workingon": "Currently working on",
-    "quote": "Code is like humor. When you have to explain it, it’s bad.",
-    "contactme": "Contact me!",
-    "live": "Live ->",
-    "code": "Code ->",
-    "paintedSmile": "Painted Smile",
-    "aboutBurrito": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history.",
-    "aboutPainted": "Children's animation company website, with an intuitive interface, information about services and a photo gallery.",
-    "aboutPortfolio": "A portfolio site with detailed descriptions of my projects, information about me and contact information with and form.",
-    "aboutEltom": "A website an electrical company, with a modern design,  designed by me, information about services and a contact form.",
-    "viewAll": "view all ->",
-    "skills": "Skills",
-    "aboutme": "About Me",
-    "languages": "Languages",
-    "frameworks": "Frameworks",
-    "tools": "Tools",
-    "database": "Database and Libraries",
-    "other": "Other",
-    "aboutHello": "Hello, I'm Max!",
-    "aboutmeone": "I am a front-end developer with one and a half years of experience. My adventure with coding started out of curiosity and turned into a passion. I have worked on a variety of projects, from simple business card pages to advanced web applications, gaining valuable experience with clients.",
-    "aboutmetwo": "I create responsive, intuitive and aesthetically pleasing websites and web applications, taking care of every detail from interface design to implementation of the finished product.",
-    "aboutmethree": "I am open to new challenges and always ready to learn, believing that technical proficiency, creativity and continuous development are key to success in this industry.",
-    "readmore": "Read more ->",
-    "contactText": "Do you have questions about my work, want to collaborate or hire me for your project? Get in touch with me! I will be happy to answer any questions.",
-    "contactMe": "Contact me",
-    "labelName": "Name / Company name",
-    "labelEmail": "Email",
-    "labelMessage": "Message",
-    "send": "Send",
-    "errorName": "Please provide the name or company name",
-    "errorEmail": "Please provide a valid email address",
-    "errorMessage": "Please enter the text of the message",
-    "contactDetails": "Contact details"
+    "header": {
+        "hi": "Hello",
+        "welcome": "I'm Max, an experienced ",
+        "introduction": "I combine creativity with technology, delivering modern and effective web solutions.",
+        "workingon": "Currently working on",
+        "contactme": "Contact me!"
+    },
+    "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "contact": "Contact",
+        "aboutMe": "About me"
+    },
+
+    "section": {
+        "fun": "Curiosities",
+        "skills": "Skills"
+    },
+    "aboutMe": {
+        "hello": "Hello, I'm Max!",
+        "one": "I am a front-end developer with one and a half years of experience. My adventure with coding started out of curiosity and turned into a passion. I have worked on a variety of projects, from simple business card pages to advanced web applications, gaining valuable experience with clients.",
+        "two": "I create responsive, intuitive and aesthetically pleasing websites and web applications, taking care of every detail from interface design to implementation of the finished product.",
+        "three": "I am open to new challenges and always ready to learn, believing that technical proficiency, creativity and continuous development are key to success in this industry.",
+        "more": "Read more ->"
+    },
+    "projects": {
+        "paintedSmile": "Painted Smile",
+        "aboutBurrito": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history.",
+        "aboutPainted": "Children's animation company website, with an intuitive interface, information about services and a photo gallery.",
+        "aboutPortfolio": "A portfolio site with detailed descriptions of my projects, information about me and contact information with and form.",
+        "aboutEltom": "A website an electrical company, with a modern design,  designed by me, information about services and a contact form.",
+        "viewAll": "view all ->",
+        "live": "Live ->",
+        "code": "Code ->"
+    },
+    "skills": {
+        "languages": "Languages",
+        "frameworks": "Frameworks",
+        "tools": "Tools",
+        "database": "Database and Libraries",
+        "other": "Other"
+    },
+    "contact": {
+        "contactText": "Do you have questions about my work, want to collaborate or hire me for your project? Get in touch with me! I will be happy to answer any questions.",
+        "contactMe": "Contact me",
+        "labelName": "Name / Company name",
+        "labelEmail": "Email",
+        "labelMessage": "Message",
+        "send": "Send",
+        "errorName": "Please provide the name or company name",
+        "errorEmail": "Please provide a valid email address",
+        "errorMessage": "Please enter the text of the message",
+        "contactDetails": "Contact details"
+    },
+
+    "fun": {
+        "one": "I love Italian food",
+        "two": "I like to experiment in the kitchen",
+        "three": "My favourite film is Inception",
+        "four": "I like solving puzzles",
+        "five": "I enjoy tinkering and fixing things",
+        "six": "I love exploring new countries",
+        "seven": "I regularly cycle and play football"
+    },
+
+    "quote": "Code is like humor. When you have to explain it, it’s bad."
 }

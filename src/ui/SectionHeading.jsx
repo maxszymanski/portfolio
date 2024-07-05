@@ -56,7 +56,7 @@ const SectionLine = styled.div`
 
 function SectionHeading({ title, to, mainPage = false }) {
     const { t } = useTranslation()
-    const projectsSection = to === 'projects'
+    const projectsSection = to === 'nav.projects'
     const sectionMark = mainPage ? '#' : '/'
 
     return (

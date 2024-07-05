@@ -3,7 +3,7 @@ import AboutMeSection from '../../ui/AboutMeSection'
 
 function HomeAboutMeSection() {
     return (
-        <Section to="aboutme" mainPage>
+        <Section to="nav.aboutMe" mainPage>
             <AboutMeSection mainPage />
         </Section>
     )

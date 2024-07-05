@@ -80,12 +80,13 @@ function HeaderTitle() {
     return (
         <TitleBox>
             <Title>
-                {t('hi')} <Hand />
+                {t('header.hi')} <Hand />
                 <br />
-                {t('welcome')} <br /> <TitleSpan>front-end developer</TitleSpan>
+                {t('header.welcome')} <br />{' '}
+                <TitleSpan>front-end developer</TitleSpan>
             </Title>
-            <TitleText>{t('introduction')}</TitleText>
-            <StyledLink isMobile text="contactme" to="/contact" />
+            <TitleText>{t('header.introduction')}</TitleText>
+            <StyledLink isMobile text="header.contactme" to="/contact" />
         </TitleBox>
     )
 }

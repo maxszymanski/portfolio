@@ -3,6 +3,7 @@ import BurgerMenu from './BurgerMenu'
 import { screenWidth } from '../styles/mediaQueries'
 import Logo from './Logo'
 import { useEffect, useState } from 'react'
+import { useAppContext } from '../context/useAppContext'
 
 const NavBox = styled.div`
     display: flex;
@@ -26,22 +27,7 @@ const NavBox = styled.div`
 `
 
 function NavMobileBox() {
-    const [hasBorder, setHasBorder] = useState(false)
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 0) {
-                setHasBorder(true)
-            } else {
-                setHasBorder(false)
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll)
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
+    const { hasBorder } = useAppContext()
 
     return (
         <NavBox className={hasBorder ? 'with-border' : ''}>

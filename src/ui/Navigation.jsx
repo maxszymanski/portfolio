@@ -79,10 +79,10 @@ function Navigation() {
             <NavContainer>
                 <Logo />
                 <NavList>
-                    <NavigationLink to="/" text={t('home')} />
-                    <NavigationLink to="/projects" text={t('projects')} />
-                    <NavigationLink to="/aboutme" text={t('aboutMe')} />
-                    <NavigationLink to="/contact" text={t('contact')} />
+                    <NavigationLink to="/" text={t('nav.home')} />
+                    <NavigationLink to="/projects" text={t('nav.projects')} />
+                    <NavigationLink to="/aboutme" text={t('nav.aboutMe')} />
+                    <NavigationLink to="/contact" text={t('nav.contact')} />
                     <LanguageSwitcher />
                 </NavList>
                 <NavSocials />

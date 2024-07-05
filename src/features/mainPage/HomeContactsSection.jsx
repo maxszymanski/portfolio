@@ -3,7 +3,7 @@ import Section from '../../ui/Section'
 
 function HomeContactsSection() {
     return (
-        <Section to="contact" mainPage>
+        <Section to="nav.contact" mainPage>
             <ContactSection />
         </Section>
     )

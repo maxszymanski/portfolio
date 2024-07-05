@@ -1,5 +1,6 @@
 import AboutMeSection from '../ui/AboutMeSection'
 import SkillSection from '../ui/SkillSection'
+import FunSection from '../ui/FunSection'
 import Main from '../ui/Main'
 import Section from '../ui/Section'
 
@@ -7,11 +8,14 @@ function AboutMe() {
     return (
         <>
             <Main>
-                <Section to="aboutme">
+                <Section to="nav.aboutMe">
                     <AboutMeSection />
                 </Section>
-                <Section to="skills">
+                <Section to="section.skills">
                     <SkillSection />
+                </Section>
+                <Section to="section.fun">
+                    <FunSection />
                 </Section>
             </Main>
         </>

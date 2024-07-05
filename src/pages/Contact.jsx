@@ -6,7 +6,7 @@ function Contact() {
     return (
         <>
             <Main>
-                <Section to="contact" >
+                <Section to="nav.contact">
                     <ContactSection />
                 </Section>
             </Main>

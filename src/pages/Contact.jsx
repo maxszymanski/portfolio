@@ -1,9 +1,15 @@
-import Header from '../features/mainPage/Header'
+import ContactSection from '../ui/ContactSection'
+import Main from '../ui/Main'
+import Section from '../ui/Section'
 
 function Contact() {
     return (
         <>
-            <Header />
+            <Main>
+                <Section to="contact" >
+                    <ContactSection />
+                </Section>
+            </Main>
         </>
     )
 }

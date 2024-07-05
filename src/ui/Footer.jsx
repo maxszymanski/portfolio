@@ -1,13 +1,18 @@
 import styled from 'styled-components'
-import { Container } from './Container'
 import { screenWidth } from '../styles/mediaQueries'
 import ContactInfo from './ContactInfo'
 import { SocialLink } from './SocialLink'
+import Logo from './Logo'
 
 const StyledFooter = styled.footer`
-    padding: 1.5em;
+    padding: 1.5em 0 1em;
     margin-top: 4.5em;
-    border-top: 1px solid var(--color-gray);
+    border-top: 1px solid #abb2bf44;
+    color: var(--color-gray);
+
+    @media ${screenWidth.sm} {
+        padding: 0.5em 0;
+    }
 
     @media ${screenWidth.lg} {
         margin-top: 6em;
@@ -20,17 +25,62 @@ const StyledFooter = styled.footer`
     }
 `
 
+const FooterContainer = styled.div`
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media ${screenWidth.sm} {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+    }
+    @media ${screenWidth.lg} {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 4em;
+    }
+    @media ${screenWidth.xl} {
+        padding-top: 0.3em;
+    }
+`
+
 const FooterSocials = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5em;
+    max-width: 100%;
+`
+
+const FooterFoot = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    font-size: 1.3rem;
+
+    @media ${screenWidth.sm} {
+        margin-top: 0;
+    }
+`
+const FooterDate = styled.p``
+const FooterDateTwo = styled.p`
+    font-size: 1.7rem;
+    margin-top: 0.2em;
+    margin-right: 0.1em;
 `
 
 function Footer() {
     return (
         <StyledFooter>
-            <Container>
+            <FooterContainer>
+                <Logo isMobile />
                 <ContactInfo />
                 <FooterSocials>
                     <SocialLink to="https://github.com/maxszymanski">
@@ -40,7 +90,11 @@ function Footer() {
                         <img src="./images/linkedin.png" />
                     </SocialLink>
                 </FooterSocials>
-            </Container>
+            </FooterContainer>
+            <FooterFoot>
+                <FooterDateTwo>&copy;</FooterDateTwo>
+                <FooterDate>2024 Max Szymański</FooterDate>
+            </FooterFoot>
         </StyledFooter>
     )
 }

@@ -16,10 +16,10 @@ const SectionBox = styled.section`
     }
 `
 
-function Section({ to, children }) {
+function Section({ to, children, mainPage = false }) {
     return (
         <SectionBox>
-            <SectionHeading to={to} title={to} />
+            <SectionHeading to={to} title={to} mainPage={mainPage} />
             {children}
         </SectionBox>
     )

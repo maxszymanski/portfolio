@@ -1,9 +1,8 @@
-import styled from 'styled-components'
-import Section from '../../ui/Section'
 import { useTranslation } from 'react-i18next'
-import ContactForm from '../../ui/ContactForm'
-import ContactInfo from '../../ui/ContactInfo'
-import { screenWidth } from '../../styles/mediaQueries'
+import { screenWidth } from '../styles/mediaQueries'
+import ContactForm from './ContactForm'
+import ContactInfo from './ContactInfo'
+import styled from 'styled-components'
 
 const ContactContainer = styled.div`
     display: flex;
@@ -54,19 +53,17 @@ const ContactText = styled.p`
     }
 `
 
-function ContactsSection() {
+function ContactSection() {
     const { t } = useTranslation()
     return (
-        <Section to="contact">
-            <ContactContainer>
-                <Box>
-                    <ContactText>{t('contactText')}</ContactText>
-                    <ContactInfo inContactSection />
-                </Box>
-                <ContactForm />
-            </ContactContainer>
-        </Section>
+        <ContactContainer>
+            <Box>
+                <ContactText>{t('contactText')}</ContactText>
+                <ContactInfo inContactSection />
+            </Box>
+            <ContactForm />
+        </ContactContainer>
     )
 }
 
-export default ContactsSection
+export default ContactSection

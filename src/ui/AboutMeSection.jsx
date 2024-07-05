@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import Section from '../../ui/Section'
-import StyledLink from '../../ui/StyledLink'
+import { screenWidth } from '../styles/mediaQueries'
 import { useTranslation } from 'react-i18next'
-import { screenWidth } from '../../styles/mediaQueries'
+import StyledLink from './StyledLink'
 
 const SectionContainer = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
     gap: 3em;
@@ -25,10 +25,7 @@ const SectionContainer = styled.div`
     }
     @media ${screenWidth.xl} {
         justify-content: space-between;
-        margin-top: -4.5em;
-    }
-    @media ${screenWidth.xxl} {
-        margin-top: -5em;
+        margin-top: -2em;
     }
 `
 
@@ -73,21 +70,20 @@ const RowText = styled.p`
     }
 `
 
-function AboutMeSection() {
+function AboutMeSection({ mainPage = false }) {
     const { t } = useTranslation()
+
     return (
-        <Section to="aboutme">
-            <SectionContainer>
-                <TextBox>
-                    <RowText>{t('aboutHello')}</RowText>
-                    <RowText>{t('aboutmeone')}</RowText>
-                    <RowText>{t('aboutmetwo')}</RowText>
-                    <RowText>{t('aboutmethree')}</RowText>
-                    <StyledLink to="/aboutme" text="readmore" />
-                </TextBox>
-                <Image src="./images/about.webp" />
-            </SectionContainer>
-        </Section>
+        <SectionContainer>
+            <TextBox>
+                <RowText>{t('aboutHello')}</RowText>
+                <RowText>{t('aboutmeone')}</RowText>
+                <RowText>{t('aboutmetwo')}</RowText>
+                <RowText>{t('aboutmethree')}</RowText>
+                {mainPage && <StyledLink to="/aboutme" text="readmore" />}
+            </TextBox>
+            <Image src="./images/about.webp" />
+        </SectionContainer>
     )
 }
 

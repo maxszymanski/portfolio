@@ -28,9 +28,9 @@ const CardsBox = styled.div`
     }
 `
 
-function ProjectsSection() {
+function HomeProjectsSection() {
     return (
-        <Section to="projects">
+        <Section to="projects" mainPage>
             <CardsBox>
                 {mainProjects.map((project) => (
                     <ProjectCard project={project} key={project.name} />
@@ -41,4 +41,4 @@ function ProjectsSection() {
     )
 }
 
-export default ProjectsSection
+export default HomeProjectsSection

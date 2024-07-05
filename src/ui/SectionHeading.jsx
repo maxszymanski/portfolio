@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ProjectsSection from '../features/mainPage/ProjectsSection'
+import ProjectsSection from '../features/mainPage/HomeProjectsSection'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { TitleLink } from '../features/mainPage/HeaderImage'
@@ -54,17 +54,21 @@ const SectionLine = styled.div`
     background-color: var(--color-primary);
 `
 
-function SectionHeading({ title, to }) {
+function SectionHeading({ title, to, mainPage = false }) {
     const { t } = useTranslation()
     const projectsSection = to === 'projects'
+    const sectionMark = mainPage ? '#' : '/'
 
     return (
         <HeadingContainer>
             <HeadingBox>
-                <HeadingSection>#{t(title)}</HeadingSection>
-                <SectionLine />
+                <HeadingSection>
+                    {sectionMark}
+                    {t(title)}
+                </HeadingSection>
+                {mainPage && <SectionLine />}
             </HeadingBox>
-            {projectsSection && <ViewAllLink />}
+            {projectsSection && mainPage && <ViewAllLink />}
         </HeadingContainer>
     )
 }

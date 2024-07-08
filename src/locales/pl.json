@@ -25,6 +25,7 @@
     },
     "projects": {
         "paintedSmile": "Malowany Uśmiech",
+        "rockPaper": "Kamień Papier Nożyce",
         "aboutBurrito": "Aplikacja do zamawiania jedzenia z restauracji z funkcjami zakładania konta, edycji profilu i przeglądania historii zamówień.",
         "aboutPainted": "Strona internetowa firmy z animacjami dla dzieci, z intuicyjnym interfejsem, informacjami o usługach i galerią zdjęć.",
         "aboutPortfolio": "Strona portfolio, zawierająca szczegółowe opisy moich projektów, informacje o mnie oraz dane kontaktowe wraz z formularzem. ",

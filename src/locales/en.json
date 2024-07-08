@@ -26,6 +26,7 @@
     },
     "projects": {
         "paintedSmile": "Painted Smile",
+        "rockPaper": "Rock Paper Scissors",
         "aboutBurrito": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history.",
         "aboutPainted": "Children's animation company website, with an intuitive interface, information about services and a photo gallery.",
         "aboutPortfolio": "A portfolio site with detailed descriptions of my projects, information about me and contact information with and form.",

@@ -60,7 +60,7 @@ export const allProjects = [
         codeLink: 'https://github.com/maxszymanski/Space-website',
     },
     {
-        name: 'Rock Paper Scissors',
+        name: 'projects.rockPaper',
         image: '/images/rock.webp',
         stack: 'HTML CSS JavaScript',
         info: 'projects.aboutRock',

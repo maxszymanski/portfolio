@@ -92,7 +92,9 @@ function ProjectCard({ project }) {
         shadow = true,
     } = project
 
-    const paintedSmileCard = name === 'projects.paintedSmile'
+    const translateTitle =
+        name === 'projects.paintedSmile' || 'projects.rockPaper'
+
     return (
         <Card>
             <CardImageBox $withShadow={shadow}>
@@ -103,7 +105,7 @@ function ProjectCard({ project }) {
             </CardLanguageBox>
             <CardInfoBox>
                 <CardHeading>
-                    {paintedSmileCard ? t(`${name}`) : name}{' '}
+                    {translateTitle ? t(`${name}`) : name}{' '}
                 </CardHeading>
                 <CardInfo>{t(`${info}`)}</CardInfo>
                 <CardLinkBox>

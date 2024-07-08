@@ -4,7 +4,7 @@ import { screenWidth } from '../styles/mediaQueries'
 const position = {
     left: css`
         left: 5em;
-        bottom: 0;
+        bottom: -1em;
         rotate: 45deg;
         height: 80px;
         width: 80px;

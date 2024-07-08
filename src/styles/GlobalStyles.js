@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
 
 html {
   font-size: 62.5%;
- scroll-behavior: smooth;
+ 
   @media ${screenWidth.lg} {
     overflow-x: hidden;
   }

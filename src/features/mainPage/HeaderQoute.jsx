@@ -52,15 +52,32 @@ const Quote = styled.p`
 
 function HeaderQoute() {
     const { t } = useTranslation()
+    const MAX_NUMBER = 12
+    const quotes = [
+        'one',
+        'two',
+        'three',
+        'four',
+        'five',
+        'six',
+        'seven',
+        'eight',
+        'nine',
+        'ten',
+        'eleven',
+        'twelve',
+    ]
+    const randomNumber = Math.floor(Math.random() * MAX_NUMBER)
+
     return (
         <QuoteContainer>
             <QuoteBox>
-                <Quote>{t('quote')}</Quote>
+                <Quote>{t(`quotes.${quotes[randomNumber]}.quote`)}</Quote>
                 <QouteTop src="/images/quote.png" />
                 <QouteBottom src="/images/quote.png" />
             </QuoteBox>
             <AuthorBox>
-                <Quote>- Cory House</Quote>
+                <Quote>- {t(`quotes.${quotes[randomNumber]}.author`)}</Quote>
             </AuthorBox>
         </QuoteContainer>
     )

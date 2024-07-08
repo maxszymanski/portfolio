@@ -7,7 +7,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 380px;
+    max-width: 400px;
 
     border: solid 1px var(--color-gray);
     border-radius: 2px;
@@ -82,7 +82,15 @@ const CardInfo = styled.p`
 
 function ProjectCard({ project }) {
     const { t } = useTranslation()
-    const { name, image, stack, info, liveLink, codeLink, shadow } = project
+    const {
+        name,
+        image,
+        stack,
+        info,
+        liveLink,
+        codeLink,
+        shadow = true,
+    } = project
 
     const paintedSmileCard = name === 'projects.paintedSmile'
     return (

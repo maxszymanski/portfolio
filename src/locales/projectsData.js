@@ -1,7 +1,7 @@
 export const mainProjects = [
     {
         name: 'Porfolio',
-        image: '/images/portfolio.png',
+        image: '/images/portfolio.webp',
         stack: 'React Styled-component PHP',
         info: 'projects.aboutPortfolio',
         liveLink: '/',
@@ -15,7 +15,6 @@ export const mainProjects = [
         info: 'projects.aboutBurrito',
         liveLink: 'https://tastyburrito.netlify.app/',
         codeLink: 'https://github.com/maxszymanski/burrito',
-        shadow: true,
     },
     {
         name: 'projects.paintedSmile',
@@ -24,7 +23,6 @@ export const mainProjects = [
         info: 'projects.aboutPainted',
         liveLink: 'https://malowanyusmiech.pl/',
         codeLink: 'https://github.com/maxszymanski/painted-smile',
-        shadow: true,
     },
 ]
 export const allProjects = [
@@ -36,19 +34,26 @@ export const allProjects = [
         info: 'projects.aboutEltom',
         liveLink: 'https://eltom.online/',
         codeLink: 'https://github.com/maxszymanski/El-Tom',
-        shadow: true,
+    },
+    {
+        name: 'Wild Oasis',
+        image: '/images/oasis.webp',
+        stack: 'React Styled-components',
+        info: 'projects.aboutOasis',
+        liveLink: 'https://bookings-wild.netlify.app/',
+        codeLink: 'https://github.com/maxszymanski/wild-oasis',
     },
     {
         name: 'World Explorer',
-        image: '/images/eltom.webp',
+        image: '/images/explorer.webp',
         stack: 'React TypeScript CSS',
-        info: 'projects.aboutEltom',
+        info: 'projects.aboutExplorer',
         liveLink: 'https://maxszymanski.github.io/World-Explorer/',
         codeLink: 'https://github.com/maxszymanski/World-Explorer',
     },
     {
         name: 'Space Website',
-        image: '/images/eltom.webp',
+        image: '/images/space.webp',
         stack: 'HTML CSS JavaScript',
         info: 'projects.aboutSpace',
         liveLink: 'https://maxszymanski.github.io/Space-website/',
@@ -56,7 +61,7 @@ export const allProjects = [
     },
     {
         name: 'Rock Paper Scissors',
-        image: '/images/eltom.webp',
+        image: '/images/rock.webp',
         stack: 'HTML CSS JavaScript',
         info: 'projects.aboutRock',
         liveLink: 'https://maxszymanski.github.io/Rock-Paper-Scissors/',

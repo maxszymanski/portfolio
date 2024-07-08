@@ -7,7 +7,7 @@ import { mainProjects } from '../../locales/projectsData'
 import ViewAllLink from '../../ui/ViewAllLink'
 import { screenWidth } from '../../styles/mediaQueries'
 
-const CardsBox = styled.div`
+export const CardsBox = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -21,7 +21,7 @@ const CardsBox = styled.div`
         gap: 4em 1em;
     }
     @media ${screenWidth.xl} {
-        gap: 2em;
+        gap: 1em;
     }
     @media ${screenWidth.xxl} {
         gap: 5em;

@@ -39,6 +39,7 @@ const QouteBottom = styled.img`
 
 const Quote = styled.p`
     color: var(--color-white);
+    text-align: center;
 
     @media ${screenWidth.lg} {
         font-size: 2rem;

@@ -34,7 +34,7 @@ function StyledLink({
     to,
     isMobile = false,
     isPrimary = true,
-    target = 'blank',
+    target = '_self',
 }) {
     const { t } = useTranslation()
     return (

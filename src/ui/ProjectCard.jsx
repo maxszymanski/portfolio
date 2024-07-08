@@ -55,6 +55,7 @@ const CardInfoBox = styled.div`
     padding: 1em 1em 1.5em;
     gap: 1.5em;
     border-top: solid 1px var(--color-gray);
+    min-height: 305px;
 `
 
 const CardLinkBox = styled.div`

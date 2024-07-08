@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { useAppContext } from '../context/useAppContext'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { screenWidth } from '../styles/mediaQueries'
 
 const LogoImage = styled.img``
@@ -33,8 +33,15 @@ const LogoLink = styled(Link)`
 
 function Logo({ isMobile = false }) {
     const { setShowNav } = useAppContext()
+    const { pathname } = useLocation()
+
+    const handleClickLink = () => {
+        setShowNav(false)
+        pathname === '/' && window.scrollTo(0, 0)
+    }
+
     return (
-        <LogoLink to="/" onClick={() => setShowNav(false)} $isMobile={isMobile}>
+        <LogoLink to="/" onClick={handleClickLink} $isMobile={isMobile}>
             <LogoImage src="/logo.svg"></LogoImage>
             Max
         </LogoLink>

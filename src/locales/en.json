@@ -30,6 +30,9 @@
         "aboutPainted": "Children's animation company website, with an intuitive interface, information about services and a photo gallery.",
         "aboutPortfolio": "A portfolio site with detailed descriptions of my projects, information about me and contact information with and form.",
         "aboutEltom": "A website an electrical company, with a modern design,  designed by me, information about services and a contact form.",
+        "aboutWorldExplorer": "An interactive application that allows users to explore different countries around the world.",
+        "aboutSpace": "A site dedicated to space travel, created as an internship. Includes information on space missions and technologies.",
+        "aboutRock": "Classic rock paper scissors game. Choose your move and face your opponent in this simple but addictive game.",
         "viewAll": "view all ->",
         "live": "Live ->",
         "code": "Code ->"
@@ -63,6 +66,54 @@
         "six": "I love exploring new countries",
         "seven": "I regularly cycle and play football"
     },
-
-    "quote": "Code is like humor. When you have to explain it, it’s bad."
+    "quotes": {
+        "one": {
+            "quote": "Code is like humor. When you have to explain it, it’s bad.",
+            "author": "Cory House"
+        },
+        "two": {
+            "quote": "Success is the sum of small efforts, repeated day in and day out.",
+            "author": "Robert Collier"
+        },
+        "three": {
+            "quote": "Experience is the name everyone gives to their mistakes.",
+            "author": "Oscar Wilde"
+        },
+        "four": {
+            "quote": "In order to be irreplaceable, one must always be different.",
+            "author": "Coco Chanel"
+        },
+        "five": {
+            "quote": "Choose a job you love, and you will never have to work a day in your life.",
+            "author": "Confucius"
+        },
+        "six": {
+            "quote": "Programming isn't about what you know, it's about what you can figure out.",
+            "author": "Chris Pine"
+        },
+        "seven": {
+            "quote": "Believe you can and you're halfway there.",
+            "author": "Theodore Roosevelt"
+        },
+        "eight": {
+            "quote": "The journey of a thousand miles begins with one step.",
+            "author": "Lao Tzu"
+        },
+        "nine": {
+            "quote": "If you can dream it, you can do it.",
+            "author": "Walt Disney"
+        },
+        "ten": {
+            "quote": "Failure is simply the opportunity to begin again, this time more intelligently.",
+            "author": "Henry Ford"
+        },
+        "eleven": {
+            "quote": "The only limit to our realization of tomorrow is our doubts of today.",
+            "author": "Franklin D. Roosevelt"
+        },
+        "twelve": {
+            "quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+            "author": "Mahatma Gandhi"
+        }
+    }
 }

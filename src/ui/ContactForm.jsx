@@ -68,7 +68,7 @@ const FormHeading = styled.h4`
     }
 `
 const Input = styled.input`
-    ${commonStyles}
+    ${commonStyles};
 `
 
 const TextArea = styled.textarea`
@@ -129,7 +129,6 @@ function ContactForm() {
                     <Input
                         id="name"
                         type="text"
-                        autoComplete="off"
                         {...register('name', {
                             required: `${t('contact.errorName')}`,
                         })}
@@ -142,7 +141,6 @@ function ContactForm() {
                     <Input
                         id="email"
                         type="text"
-                        autoComplete="off"
                         {...register('email', {
                             required: `${t('contact.errorEmail')}`,
                             pattern: {

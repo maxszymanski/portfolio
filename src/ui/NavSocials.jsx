@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { screenWidth } from '../styles/mediaQueries'
 import { SocialLink } from './SocialLink'
@@ -16,14 +16,17 @@ const SocialBox = styled.div`
         display: none;
     }
     @media ${screenWidth.xl} {
-        position: fixed;
-        display: flex;
+        position: absolute;
+        display: ${(props) => (props.$mainPage ? 'flex' : 'none')};
         left: 15px;
         top: 0;
         flex-direction: column;
     }
     @media ${screenWidth.xxl} {
         left: 30px;
+    }
+    @media ${screenWidth.xxxl} {
+        display: flex;
     }
 `
 
@@ -39,8 +42,10 @@ const Line = styled.div`
 `
 
 function NavSocials() {
+    const { pathname } = useLocation()
+    const mainPage = pathname === '/'
     return (
-        <SocialBox>
+        <SocialBox $mainPage={mainPage}>
             <Line />
             <SocialLink to="https://github.com/maxszymanski">
                 <img src="./images/github.png" />

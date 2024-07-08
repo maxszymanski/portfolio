@@ -1,11 +1,12 @@
 export const mainProjects = [
     {
         name: 'Porfolio',
-        image: '/images/portfolio.webp',
+        image: '/images/portfolio.png',
         stack: 'React Styled-component PHP',
         info: 'projects.aboutPortfolio',
         liveLink: '/',
         codeLink: 'https://github.com/maxszymanski/my-page',
+        shadow: false,
     },
     {
         name: 'Burrito',
@@ -14,6 +15,7 @@ export const mainProjects = [
         info: 'projects.aboutBurrito',
         liveLink: 'https://tastyburrito.netlify.app/',
         codeLink: 'https://github.com/maxszymanski/burrito',
+        shadow: true,
     },
 
     {
@@ -23,6 +25,7 @@ export const mainProjects = [
         info: 'projects.aboutPainted',
         liveLink: 'https://malowanyusmiech.pl/',
         codeLink: 'https://github.com/maxszymanski/painted-smile',
+        shadow: true,
     },
 ]
 export const allProjects = [
@@ -34,6 +37,7 @@ export const allProjects = [
         info: 'projects.aboutEltom',
         liveLink: 'https://eltom.online/',
         codeLink: 'https://github.com/maxszymanski/El-Tom',
+        shadow: true,
     },
 ]
 

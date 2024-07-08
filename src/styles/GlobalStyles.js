@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
 
 html {
   font-size: 62.5%;
- 
+ scroll-behavior: smooth;
   @media ${screenWidth.lg} {
     overflow-x: hidden;
   }
@@ -79,6 +79,13 @@ img {
   height: auto;
 
 }
+input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px var(--background) inset !important;
+    -webkit-text-fill-color: var(--color-white) !important;
+  }
 `
 
 export default GlobalStyles

@@ -24,6 +24,7 @@ const CardImageBox = styled.div`
     &::after {
         content: '';
         position: absolute;
+        display: ${(props) => (props.$withShadow ? 'block' : 'none')};
         width: 100%;
         height: 100%;
         top: 0;
@@ -32,7 +33,6 @@ const CardImageBox = styled.div`
         z-index: 10;
     }
 `
-
 const CardImage = styled.img`
     height: 200px;
     object-fit: fill;
@@ -81,12 +81,12 @@ const CardInfo = styled.p`
 
 function ProjectCard({ project }) {
     const { t } = useTranslation()
-    const { name, image, stack, info, liveLink, codeLink } = project
+    const { name, image, stack, info, liveLink, codeLink, shadow } = project
 
     const paintedSmileCard = name === 'projects.paintedSmile'
     return (
         <Card>
-            <CardImageBox>
+            <CardImageBox $withShadow={shadow}>
                 <CardImage src={image} />
             </CardImageBox>
             <CardLanguageBox>

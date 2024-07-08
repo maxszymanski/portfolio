@@ -74,6 +74,9 @@ const FooterDateTwo = styled.p`
     font-size: 1.7rem;
     margin-top: 0.2em;
     margin-right: 0.1em;
+    @media ${screenWidth.xxl} {
+        margin-top: 0.25em;
+    }
 `
 
 function Footer() {

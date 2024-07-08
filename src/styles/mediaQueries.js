@@ -5,6 +5,7 @@ export const breakpoints = {
     lg: '1024px',
     xl: '1280px',
     xxl: '1536px',
+    xxxl: '1800px',
 }
 
 export const screenWidth = {
@@ -14,4 +15,5 @@ export const screenWidth = {
     lg: `(min-width: ${breakpoints.lg})`,
     xl: `(min-width: ${breakpoints.xl})`,
     xxl: `(min-width: ${breakpoints.xxl})`,
+    xxxl: `(min-width: ${breakpoints.xxxl})`,
 }

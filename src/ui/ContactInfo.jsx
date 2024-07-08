@@ -76,7 +76,7 @@ function ContactInfo({ inContactSection = false }) {
     return (
         <ContactInfoBox $contact={inContactSection}>
             {inContactSection && (
-                <ContactsHeading>{t('contactDetails')}</ContactsHeading>
+                <ContactsHeading>{t('contact.contactDetails')}</ContactsHeading>
             )}
             <ContactLink to="mailto:hello@maxszymanski.pl">
                 <Email /> hello@maxszymanski.pl

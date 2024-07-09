@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import StyledLink from './StyledLink'
 import { screenWidth } from '../styles/mediaQueries'
 import { useTranslation } from 'react-i18next'
+import { shadow } from './ContactInfo'
 
 const Card = styled.div`
     display: flex;
@@ -12,6 +13,7 @@ const Card = styled.div`
     border: solid 1px var(--color-gray);
     border-radius: 2px;
     overflow: hidden;
+    ${shadow}
 `
 
 const CardImageBox = styled.div`

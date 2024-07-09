@@ -30,6 +30,9 @@ const RotatedSquare = styled.div`
     border-radius: 5px;
     animation-iteration-count: infinite;
     ${(props) => position[props.$position] + ';'}
+    -webkit-box-shadow: 0px 0px 34px -1px rgba(73, 75, 77, 0.46);
+    -moz-box-shadow: 0px 0px 34px -1px rgba(73, 75, 77, 0.46);
+    box-shadow: 0px 0px 34px -1px rgba(73, 75, 77, 0.46);
 
     @media ${screenWidth.xl} {
         display: block;

@@ -3,6 +3,7 @@ import FormRow from './FormRow'
 import { useForm } from 'react-hook-form'
 import { screenWidth } from '../styles/mediaQueries'
 import { useTranslation } from 'react-i18next'
+import { shadow } from './ContactInfo'
 
 const commonStyles = css`
     position: relative;
@@ -11,7 +12,7 @@ const commonStyles = css`
     font-size: 1.4rem;
     font-weight: 300;
     width: 100%;
-    background-color: transparent;
+    background-color: var(--background);
     border: 1px solid;
     border-radius: 2px;
     color: var(--color-white);
@@ -37,6 +38,7 @@ const FormBox = styled.form`
     width: 100%;
     border-radius: 2px;
     max-width: 400px;
+    ${shadow}
 
     @media ${screenWidth.small} {
         padding: 2em 1.3em;
@@ -85,6 +87,7 @@ const FormButton = styled.button`
     background-color: transparent;
     color: var(--color-white);
     transition: background-color 0.3s;
+    ${shadow}
 
     &:hover {
         background-color: var(--color-primaryLink);

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { commonStyles } from './HeaderImage'
 import { useTranslation } from 'react-i18next'
 import { screenWidth } from '../../styles/mediaQueries'
+import { shadow } from '../../ui/ContactInfo'
 
 const QuoteContainer = styled.div`
     display: flex;

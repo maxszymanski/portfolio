@@ -4,6 +4,7 @@ import { screenWidth } from '../../styles/mediaQueries'
 import { PiHandWavingLight } from 'react-icons/pi'
 
 import StyledLink from '../../ui/StyledLink'
+import TypingText from '../../ui/TypingText'
 
 const TitleBox = styled.div`
     margin-top: 0.5em;
@@ -28,23 +29,32 @@ const Title = styled.h1`
     font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 1em;
+    min-height: 157px;
 
     @media ${screenWidth.small} {
         padding: 0 0.5em;
     }
+
     @media ${screenWidth.lg} {
         padding: 0;
     }
     @media ${screenWidth.xl} {
         font-size: 3.5rem;
+        min-height: 173px;
     }
     @media ${screenWidth.xxl} {
         font-size: 4rem;
+        min-height: 197px;
     }
 `
 export const TitleSpan = styled.span`
     color: var(--color-primary);
     font-weight: 800;
+    display: inline-block;
+
+    @media ${screenWidth.sm} {
+        display: none;
+    }
 `
 
 const TitleText = styled.p`
@@ -83,7 +93,8 @@ function HeaderTitle() {
                 {t('header.hi')} <Hand />
                 <br />
                 {t('header.welcome')} <br />{' '}
-                <TitleSpan>front-end developer</TitleSpan>
+                <TitleSpan>Front-end Developer</TitleSpan>
+                <TypingText />
             </Title>
             <TitleText>{t('header.introduction')}</TitleText>
             <StyledLink isMobile text="header.contactme" to="/contact" />

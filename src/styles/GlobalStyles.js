@@ -6,13 +6,13 @@ import { screenWidth } from './mediaQueries'
 const GlobalStyles = createGlobalStyle`
 :root {
  
-  --background: #282C33;
-  --color-white: #eef2ff;
-  --color-primary: #C778DD;
-  --color-gray: #ABB2BF;
-  --color-stone: #4d5158;
-  --color-socialLink: #4d51584c;
-  --color-primaryLink: #c778dd33;
+  --background: rgb(40, 44, 51);
+  --color-white: rgb(238, 242, 255);
+  --color-primary: rgb(199, 120, 221);
+  --color-gray: rgb(171, 178, 191);
+  --color-stone: rgb(77, 81, 88);
+  --color-socialLink: rgba(77, 81, 88, 0.3);
+  --color-primaryLink: rgba(199, 120, 221, 0.2);
  
 
 }
@@ -23,12 +23,20 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+ 
 
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px var(--background) inset !important;
+    -webkit-text-fill-color: var(--color-white) !important;
+  }
  
   @media ${screenWidth.lg} {
     overflow-x: hidden;

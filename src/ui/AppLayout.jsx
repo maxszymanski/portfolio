@@ -20,8 +20,8 @@ function AppLayout() {
             <AnimatedCursor
                 innerSize={10}
                 outerSize={35}
-                innerScale={1}
-                outerScale={1.8}
+                innerScale={1.5}
+                outerScale={0}
                 outerAlpha={0}
                 hasBlendMode={true}
                 innerStyle={{

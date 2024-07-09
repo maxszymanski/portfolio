@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { commonStyles } from './HeaderImage'
 import { useTranslation } from 'react-i18next'
 import { screenWidth } from '../../styles/mediaQueries'
@@ -22,11 +22,13 @@ const AuthorBox = styled.div`
     z-index: 0;
 `
 
-const qouteImageStyles = `
-     position: absolute;
+const qouteImageStyles = css`
+    position: absolute;
     z-index: 1;
     width: 30px;
+    background-color: transparent;
 `
+
 const QouteTop = styled.img`
     ${qouteImageStyles}
     top: -10px;

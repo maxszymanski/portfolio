@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { screenWidth } from '../styles/mediaQueries'
+import { shadow } from './ContactInfo'
 
 const position = {
     left: css`
@@ -8,7 +9,7 @@ const position = {
         rotate: 45deg;
         height: 80px;
         width: 80px;
-        animation-duration: 100s;
+        animation-duration: 90s;
         animation-name: rotateSquareLeft;
     `,
     right: css`
@@ -30,9 +31,7 @@ const RotatedSquare = styled.div`
     border-radius: 5px;
     animation-iteration-count: infinite;
     ${(props) => position[props.$position] + ';'}
-    -webkit-box-shadow: 0px 0px 34px -1px rgba(73, 75, 77, 0.46);
-    -moz-box-shadow: 0px 0px 34px -1px rgba(73, 75, 77, 0.46);
-    box-shadow: 0px 0px 34px -1px rgba(73, 75, 77, 0.46);
+    ${shadow}
 
     @media ${screenWidth.xl} {
         display: block;
@@ -42,7 +41,7 @@ const RotatedSquare = styled.div`
             rotate: 0;
         }
         to {
-            rotate: -360deg;
+            rotate: -315deg;
         }
     }
     @keyframes rotateSquareRight {

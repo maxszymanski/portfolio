@@ -1,4 +1,12 @@
 {
+    "meta": {
+        "description": {
+            "main": "Jestem doświadczonym React frontend developerem specjalizującym się w tworzeniu responsywnych i nowoczesnych stron internetowych. Sprawdź moje portfolio, aby dowiedzieć się więcej!",
+            "contact": "Skontaktuj się ze mną! Wypełnij formularz kontaktowy lub napisz bezpośrednio na email.",
+            "projects": "Zobacz przykłady projektów. Od nowoczesnych stron internetowych po złożone aplikacje webowe.",
+            "aboutMe": "Poznaj Max Szymański, doświadczonego frontend developera specjalizującego się w tworzeniu nowoczesnych stron internetowych. Przeczytaj o moich umiejętnościach, doświadczeniu i pasji do kodowania."
+        }
+    },
     "header": {
         "hi": "Witaj",
         "welcome": "Jestem Max, doświadczony ",

@@ -6,6 +6,7 @@ import GlobalStyles from './styles/GlobalStyles'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import AboutMe from './pages/AboutMe'
+import { HelmetProvider } from 'react-helmet-async'
 
 const router = createBrowserRouter([
     {
@@ -35,7 +36,9 @@ function App() {
     return (
         <AppProvider>
             <GlobalStyles />
-            <RouterProvider router={router} />
+            <HelmetProvider>
+                <RouterProvider router={router} />
+            </HelmetProvider>
         </AppProvider>
     )
 }

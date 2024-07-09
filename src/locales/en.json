@@ -1,4 +1,12 @@
 {
+    "meta": {
+        "description": {
+            "main": "I am an experienced React frontend developer specializing in responsive and modern websites. Check out my portfolio to learn more!",
+            "contact": "Get in touch with me! Fill out the contact form or email me directly.",
+            "projects": "See examples of projects. From modern websites to complex web applications.",
+            "aboutMe": "Meet Max Szymański, an experienced frontend developer specializing in creating modern websites. Read about my skills, experience, and passion for coding."
+        }
+    },
     "header": {
         "hi": "Hello",
         "welcome": "I'm Max, an experienced ",

@@ -106,7 +106,7 @@ function ContactForm() {
     } = useForm()
 
     const onSubmit = async (data) => {
-        const response = await fetch('/send-email.php', {
+        const response = await fetch('/mail.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -148,7 +148,7 @@ function ContactForm() {
                             required: `${t('contact.errorEmail')}`,
                             pattern: {
                                 value: /\S+@\S+\.\S+/,
-                                message: `${t('errorEmail')}`,
+                                message: `${t('contact.errorEmail')}`,
                             },
                         })}
                     />

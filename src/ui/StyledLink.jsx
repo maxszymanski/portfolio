@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { screenWidth } from '../styles/mediaQueries'
 
-const PrimaryLink = styled(Link)`
+export const linkStyles = css`
     border: 1px solid;
     padding: 0.5em 1em;
     display: ${(props) => (props.$isMobile ? 'none' : 'inline-block')};
@@ -27,6 +27,10 @@ const PrimaryLink = styled(Link)`
     @media ${screenWidth.xxl} {
         font-size: 1.9rem;
     }
+`
+
+const PrimaryLink = styled(Link)`
+    ${linkStyles}
 `
 
 function StyledLink({

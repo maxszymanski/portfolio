@@ -7,6 +7,7 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import AboutMe from './pages/AboutMe'
 import { HelmetProvider } from 'react-helmet-async'
+import ErrorPage from './pages/ErrorPage'
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
             },
         ],
     },
+    { path: '*', element: <ErrorPage /> },
 ])
 
 function App() {

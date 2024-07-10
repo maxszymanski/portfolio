@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 import { screenWidth } from '../styles/mediaQueries'
 import { useTranslation } from 'react-i18next'
+import { useAppContext } from '../context/useAppContext'
 
 const Row = styled.div`
     position: relative;
@@ -48,16 +49,20 @@ const Label = styled.label`
 
 const ErrorMessage = styled.span`
     padding-left: 0.3em;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #d13838;
     font-weight: 400;
 
+    @media ${screenWidth.small} {
+        font-size: 1.2rem;
+    }
     @media ${screenWidth.xl} {
         font-size: 1.4rem;
     }
 `
 
 function FormRow({ label, children, error }) {
+    const { emailStatus } = useAppContext()
     const [isFocused, setIsFocused] = useState(false)
     const { t } = useTranslation()
 
@@ -67,6 +72,9 @@ function FormRow({ label, children, error }) {
     useEffect(() => {
         if (children?.props?.value) {
             setIsFocused(children.props.value !== '')
+        }
+        if (emailStatus === 'success') {
+            setIsFocused(false)
         }
     }, [children])
 

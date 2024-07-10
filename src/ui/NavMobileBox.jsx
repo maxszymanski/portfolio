@@ -13,7 +13,7 @@ const NavBox = styled.div`
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
     padding: 0.8em 1.5em;
     background-color: var(--background);
 

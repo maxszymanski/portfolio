@@ -7,6 +7,10 @@ const AppProvider = ({ children }) => {
     const [showNav, setShowNav] = useState(false)
     const [appLanguage, setAppLanguage] = useState('en')
     const [hasBorder, setHasBorder] = useState(false)
+    const [emailStatus, setEmailStatus] = useState('')
+    const [showCookieModal, setShowCookieModal] = useState(
+        !localStorage.getItem('cookie')
+    )
 
     const toggleShowNav = () => {
         const mobileScreen = window.innerWidth < 1024
@@ -66,6 +70,11 @@ const AppProvider = ({ children }) => {
         }
     }, [])
 
+    const closeCookieModal = () => {
+        localStorage.setItem('cookie', 'true')
+        setShowCookieModal(false)
+    }
+
     return (
         <AppContext.Provider
             value={{
@@ -75,6 +84,10 @@ const AppProvider = ({ children }) => {
                 appLanguage,
                 changeLanguage,
                 hasBorder,
+                emailStatus,
+                setEmailStatus,
+                showCookieModal,
+                closeCookieModal,
             }}
         >
             {children}

@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
   --color-stone: rgb(77, 81, 88);
   --color-socialLink: rgba(77, 81, 88, 0.3);
   --color-primaryLink: rgba(199, 120, 221, 0.2);
+  --color-success: rgb(25, 135, 84);
+  --color-successHover: rgb(26, 186, 111);
+  --color-alert: rgb(219,54,70);
+  --color-alertHover: rgba(219,54,70,0.6);
  
 
 }
@@ -30,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  
+
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,

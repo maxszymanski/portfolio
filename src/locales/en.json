@@ -4,8 +4,10 @@
             "main": "I am an experienced React frontend developer specializing in responsive and modern websites. Check out my portfolio to learn more!",
             "contact": "Get in touch with me! Fill out the contact form or email me directly.",
             "projects": "See examples of projects. From modern websites to complex web applications.",
-            "aboutMe": "Meet Max Szymański, an experienced frontend developer specializing in creating modern websites. Read about my skills, experience, and passion for coding."
-        }
+            "aboutMe": "Meet Max Szymański, an experienced frontend developer specializing in creating modern websites. Read about my skills, experience, and passion for coding.",
+            "errorPage": "Sorry, the page you are looking for cannot be found. Please check the URL or return to the homepage to continue browsing our site."
+        },
+        "errorPageTitle": "Page not found"
     },
     "header": {
         "hi": "Hello",
@@ -45,6 +47,7 @@
         "aboutRock": "Classic rock paper scissors game. Choose your move and face your opponent in this simple but addictive game.",
         "viewAll": "view all ->",
         "live": "Live ->",
+        "livePhone": "Live ->",
         "code": "Code ->"
     },
     "skills": {
@@ -75,6 +78,26 @@
         "five": "I enjoy tinkering and fixing things",
         "six": "I love exploring new countries",
         "seven": "I regularly cycle and play football"
+    },
+    "modal": {
+        "success": {
+            "title": "Success!",
+            "message": "Your message has been sent successfully."
+        },
+        "error": {
+            "title": "Error",
+            "message": "Your message could not be sent. Please try again later."
+        }
+    },
+    "cookie": {
+        "textOne": "We use cookies on the site to collect traffic data.",
+        "textTwo": "For more information, see the",
+        "link": "privacy policy",
+        "accept": "Accept"
+    },
+    "errorPage": {
+        "title": "Page not found!",
+        "link": "<- Go to homepage"
     },
     "quotes": {
         "one": {

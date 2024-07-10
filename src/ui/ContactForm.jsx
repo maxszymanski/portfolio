@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import FormRow from './FormRow'
+import { useAppContext } from '../context/useAppContext'
 import { useForm } from 'react-hook-form'
 import { screenWidth } from '../styles/mediaQueries'
 import { useTranslation } from 'react-i18next'
@@ -98,27 +99,29 @@ const FormButton = styled.button`
 `
 
 function ContactForm() {
+    const { setEmailStatus } = useAppContext()
     const { t } = useTranslation()
+    const defaultValues = { name: '', email: '', message: '' }
     const {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm()
+        reset,
+    } = useForm(defaultValues)
 
     const onSubmit = async (data) => {
         const response = await fetch('/mail.php', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
+            body: JSON.stringify({ data }),
+            headers: { 'Content-Type': 'application/json' },
         })
 
         if (response.ok) {
-            alert('Wiadomość została wysłana!')
+            setEmailStatus('success')
         } else {
-            alert('Wystąpił błąd przy wysyłaniu wiadomości.')
+            setEmailStatus('error')
         }
+        reset(defaultValues)
     }
 
     return (

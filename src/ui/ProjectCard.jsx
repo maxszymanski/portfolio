@@ -32,7 +32,7 @@ const CardImageBox = styled.div`
         top: 0;
         left: 0;
         background-color: rgb(40, 44, 51, 0.35);
-        z-index: 10;
+        z-index: 2;
     }
 `
 const CardImage = styled.img`
@@ -94,6 +94,8 @@ function ProjectCard({ project }) {
         shadow = true,
     } = project
 
+    const smallPhone = window.innerWidth < 340
+
     const translateTitle =
         name === 'projects.paintedSmile' || 'projects.rockPaper'
 
@@ -112,7 +114,9 @@ function ProjectCard({ project }) {
                 <CardInfo>{t(`${info}`)}</CardInfo>
                 <CardLinkBox>
                     <StyledLink
-                        text="projects.live"
+                        text={
+                            smallPhone ? 'projects.livePhone' : 'projects.live'
+                        }
                         to={liveLink}
                         target="_blank"
                     ></StyledLink>

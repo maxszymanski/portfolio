@@ -105,7 +105,7 @@ function ContactForm() {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { errors, isSubmitting },
         reset,
     } = useForm(defaultValues)
 
@@ -138,6 +138,7 @@ function ContactForm() {
                         {...register('name', {
                             required: `${t('contact.errorName')}`,
                         })}
+                        disabled={isSubmitting}
                     />
                 </FormRow>
                 <FormRow
@@ -154,6 +155,7 @@ function ContactForm() {
                                 message: `${t('contact.errorEmail')}`,
                             },
                         })}
+                        disabled={isSubmitting}
                     />
                 </FormRow>
                 <FormRow
@@ -166,9 +168,14 @@ function ContactForm() {
                         {...register('message', {
                             required: `${t('contact.errorMessage')}`,
                         })}
+                        disabled={isSubmitting}
                     />
                 </FormRow>
-                <FormButton>{t('contact.send')}</FormButton>
+                <FormButton disabled={isSubmitting}>
+                    {isSubmitting
+                        ? `${t('contact.sending')}`
+                        : `${t('contact.send')}`}
+                </FormButton>
             </RowBox>
         </FormBox>
     )

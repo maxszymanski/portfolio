@@ -65,6 +65,7 @@
         "labelEmail": "Email",
         "labelMessage": "Wiadomość",
         "send": "Wyślij",
+        "sending": "Wysyłanie ...",
         "errorName": "Proszę podać imię lub nazwę firmy",
         "errorEmail": "Proszę podać poprawny adres email",
         "errorMessage": "Proszę wprowadzić tekst wiadomości",

@@ -64,6 +64,7 @@
         "labelEmail": "Email",
         "labelMessage": "Message",
         "send": "Send",
+        "sending": "Sending ...",
         "errorName": "Please provide the name or company name",
         "errorEmail": "Please provide a valid email address",
         "errorMessage": "Please enter the text of the message",

@@ -13,6 +13,7 @@ Live: [Portfolio](https://maxszymanski.pl/)
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
+- [License](#license)
 - [Contact](#contact)
 
 
@@ -29,7 +30,11 @@ Live: [Portfolio](https://maxszymanski.pl/)
 - [![i18next Badge](https://img.shields.io/badge/i18next-26A69A?logo=i18next&logoColor=fff&style=for-the-badge)](https://www.i18next.com/)
 
 - [![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+  
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 ## Contact

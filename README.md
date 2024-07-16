@@ -3,7 +3,9 @@
 
 This is a personal portfolio website built with React, React Router, React Hook Forms, Styled Components, and i18next. 
 
-It showcases my projects, includes an about me section, and features a contact form connected via PHP. The site is available in Polish and English.
+It showcases my projects, includes an about me section, and features a contact form connected via PHP. 
+
+The site is available in Polish and English.
 
 Live: [Portfolio](https://maxszymanski.pl/)
 

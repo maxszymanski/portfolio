@@ -1,11 +1,12 @@
 
 # Portfolio
 
-This is a personal portfolio website built with React, React Router, React Hook Forms, and Styled Components. 
+This is a personal portfolio website built with React, React Router, React Hook Forms, Styled Components, and i18next. 
 
-It showcases my projects, includes an about me section, and features a contact form connected via PHP.
+It showcases my projects, includes an about me section, and features a contact form connected via PHP. The site is available in Polish and English.
 
 Live: [Portfolio](https://maxszymanski.pl/)
+
 
 ## Table of Contents
 
@@ -22,6 +23,8 @@ Live: [Portfolio](https://maxszymanski.pl/)
 - [![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/en/main)
   
 - [![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)](https://react-hook-form.com/)
+  
+- [![i18next Badge](https://img.shields.io/badge/i18next-26A69A?logo=i18next&logoColor=fff&style=for-the-badge)](https://www.i18next.com/)
 
 - [![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 

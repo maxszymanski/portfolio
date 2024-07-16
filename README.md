@@ -5,7 +5,7 @@ This is a personal portfolio website built with React, React Router, React Hook 
 
 It showcases my projects, includes an about me section, and features a contact form connected via PHP.
 
-Live: [Porfolio](https://maxszymanski.pl/)
+Live: [Portfolio](https://maxszymanski.pl/)
 
 ## Table of Contents
 

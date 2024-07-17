@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import i18n from '../../i18n'
 import { screenWidth } from '../styles/mediaQueries'
 import { useAppContext } from '../context/useAppContext'
+import { useTranslation } from 'react-i18next'
+
+const SwitcherBox = styled.li``
 
 const Switcher = styled.select`
     background-color: transparent;
@@ -40,16 +43,20 @@ const OptionButton = styled.option`
 `
 
 function LanguageSwitcher() {
+    const { t } = useTranslation()
     const { appLanguage, changeLanguage } = useAppContext()
 
     return (
-        <Switcher
-            onChange={(e) => changeLanguage(e.target.value)}
-            value={appLanguage}
-        >
-            <OptionButton value="en">EN</OptionButton>
-            <OptionButton value="pl">PL</OptionButton>
-        </Switcher>
+        <SwitcherBox>
+            <Switcher
+                onChange={(e) => changeLanguage(e.target.value)}
+                value={appLanguage}
+                aria-label={t('nav.switcher')}
+            >
+                <OptionButton value="en">EN</OptionButton>
+                <OptionButton value="pl">PL</OptionButton>
+            </Switcher>
+        </SwitcherBox>
     )
 }
 

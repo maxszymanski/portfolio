@@ -4,7 +4,7 @@ import HeaderImage from './HeaderImage'
 import HeaderQoute from './HeaderQoute'
 import { screenWidth } from '../../styles/mediaQueries'
 import RotatedSquare from '../../ui/RotatedSquare'
-import { Container } from '../../ui/Container'
+import { useAppContext } from '../../context/useAppContext'
 
 const MainHeader = styled.header`
     position: relative;
@@ -39,6 +39,8 @@ const HeaderBox = styled.div`
 `
 
 function Header() {
+    const { isDesktop } = useAppContext()
+
     return (
         <MainHeader>
             <HeaderBox>

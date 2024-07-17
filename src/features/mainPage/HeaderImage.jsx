@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
 import { screenWidth } from '../../styles/mediaQueries'
 import { Link } from 'react-router-dom'
+import { useAppContext } from '../../context/useAppContext'
 
 export const commonStyles = `
 position: relative;
@@ -90,16 +91,21 @@ export const TitleLink = styled(Link)`
 `
 
 function HeaderImage() {
+    const { isDesktop } = useAppContext()
     const { t } = useTranslation()
     return (
         <HeaderImageBox>
             <HeaderImgSmall
                 src="./images/header-image.webp"
-                alt="picture of hacker"
+                alt={t('header.alt')}
+                fetchpriority={isDesktop ? 'low' : 'high'}
+                loading={isDesktop ? 'lazy' : 'eager'}
             />
             <HeaderImgBig
                 src="./images/header-image-big.webp"
-                alt="picture of hacker"
+                alt={t('header.alt')}
+                fetchpriority={isDesktop ? 'high' : 'low'}
+                loading={isDesktop ? 'eager' : 'lazy'}
             />
             <WorkingBox>
                 <Square />

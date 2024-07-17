@@ -90,7 +90,11 @@ const SkillColumn = styled.div`
 function SkillSection() {
     return (
         <SkillContainer>
-            <SkillImage src="./images/skills-img.webp" alt="section logo" />
+            <SkillImage
+                src="./images/skills-img.webp"
+                alt="section logo"
+                loading="lazy"
+            />
             <SkillBoxs>
                 <SkillColumn>
                     <SkillCard

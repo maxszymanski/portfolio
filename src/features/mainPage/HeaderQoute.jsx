@@ -3,6 +3,7 @@ import { commonStyles } from './HeaderImage'
 import { useTranslation } from 'react-i18next'
 import { screenWidth } from '../../styles/mediaQueries'
 import { shadow } from '../../ui/ContactInfo'
+import { useEffect, useState } from 'react'
 
 const QuoteContainer = styled.div`
     display: flex;
@@ -55,6 +56,7 @@ const Quote = styled.p`
 `
 
 function HeaderQoute() {
+    const [randomNumber, setRandomNumber] = useState(0)
     const { t } = useTranslation()
     const MAX_NUMBER = 12
     const quotes = [
@@ -71,14 +73,16 @@ function HeaderQoute() {
         'eleven',
         'twelve',
     ]
-    const randomNumber = Math.floor(Math.random() * MAX_NUMBER)
+    useEffect(() => {
+        setRandomNumber(Math.floor(Math.random() * MAX_NUMBER))
+    }, [])
 
     return (
         <QuoteContainer>
             <QuoteBox>
                 <Quote>{t(`quotes.${quotes[randomNumber]}.quote`)}</Quote>
-                <QouteTop src="/images/quote.png" />
-                <QouteBottom src="/images/quote.png" />
+                <QouteTop src="/images/quote.png" alt='"' />
+                <QouteBottom src="/images/quote.png" alt='"' />
             </QuoteBox>
             <AuthorBox>
                 <Quote>- {t(`quotes.${quotes[randomNumber]}.author`)}</Quote>

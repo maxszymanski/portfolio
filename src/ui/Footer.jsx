@@ -86,11 +86,18 @@ function Footer() {
                 <Logo isMobile />
                 <ContactInfo />
                 <FooterSocials>
-                    <SocialLink to="https://github.com/maxszymanski">
-                        <img src="./images/github.png" />
+                    <SocialLink
+                        to="https://github.com/maxszymanski"
+                        aria-label="Przejdź do profilu na GitHub"
+                    >
+                        <img src="./images/github.png" alt="GitHub" />
                     </SocialLink>
                     <SocialLink to="https://pl.linkedin.com/">
-                        <img src="./images/linkedin.png" />
+                        <img
+                            src="./images/linkedin.png"
+                            alt="LinkedIn"
+                            aria-label="Przejdź do profilu na LinkedIn"
+                        />
                     </SocialLink>
                 </FooterSocials>
             </FooterContainer>

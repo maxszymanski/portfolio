@@ -14,13 +14,15 @@
         "welcome": "I'm Max, an experienced ",
         "introduction": "I combine creativity with technology, delivering modern and effective web solutions.",
         "workingon": "Currently working on",
-        "contactme": "Contact me!"
+        "contactme": "Contact me!",
+        "alt": "picture of hacker"
     },
     "nav": {
         "home": "Home",
         "projects": "Projects",
         "contact": "Contact",
-        "aboutMe": "About me"
+        "aboutMe": "About me",
+        "switcher": "Choose language"
     },
 
     "section": {
@@ -48,7 +50,8 @@
         "viewAll": "view all ->",
         "live": "Live ->",
         "livePhone": "Live ->",
-        "code": "Code ->"
+        "code": "Code ->",
+        "alt": "Photo of project"
     },
     "skills": {
         "languages": "Languages",

@@ -8,7 +8,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 400px;
+    max-width: 402px;
 
     border: solid 1px var(--color-gray);
     border-radius: 2px;
@@ -37,7 +37,8 @@ const CardImageBox = styled.div`
 `
 const CardImage = styled.img`
     height: 200px;
-    object-fit: fill;
+    width: 100%;
+    max-width: 400px;
     border-bottom: solid 1px var(--color-gray);
 
     @media ${screenWidth.small} {
@@ -102,7 +103,11 @@ function ProjectCard({ project }) {
     return (
         <Card>
             <CardImageBox $withShadow={shadow}>
-                <CardImage src={image} />
+                <CardImage
+                    src={image}
+                    alt={`${t('projects.alt')} - ${name}`}
+                    loading="lazy"
+                />
             </CardImageBox>
             <CardLanguageBox>
                 <CardInfo>{stack}</CardInfo>

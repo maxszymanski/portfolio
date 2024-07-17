@@ -10,13 +10,12 @@ import { useAppContext } from '../context/useAppContext'
 import EmailStatusMessage from './EmailStatusMessage'
 
 function AppLayout() {
-    const { showCookieModal, emailStatus } = useAppContext()
+    const { showCookieModal, emailStatus, isDesktop } = useAppContext()
     const { pathname } = useLocation()
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [pathname])
 
-    const isDesktop = window.innerWidth >= 1024
     const showEmailStatus = emailStatus === 'error' || emailStatus === 'success'
     const showSucces = emailStatus === 'success'
 

@@ -82,7 +82,11 @@ function AboutMeSection({ mainPage = false }) {
                 <RowText>{t('aboutMe.three')}</RowText>
                 {mainPage && <StyledLink to="/aboutme" text="aboutMe.more" />}
             </TextBox>
-            <Image src="./images/about.webp" />
+            <Image
+                src="./images/about.webp"
+                alt={t('header.alt')}
+                loading="lazy"
+            />
         </SectionContainer>
     )
 }

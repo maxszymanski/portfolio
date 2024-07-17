@@ -2,20 +2,32 @@ import { createContext, useEffect, useState } from 'react'
 import i18n from '../../i18n'
 
 const AppContext = createContext()
+const desktopWidth = window.innerWidth >= 1024
 
 const AppProvider = ({ children }) => {
     const [showNav, setShowNav] = useState(false)
     const [appLanguage, setAppLanguage] = useState('en')
     const [hasBorder, setHasBorder] = useState(false)
     const [emailStatus, setEmailStatus] = useState('')
+    const [isDesktop, setIsDesktop] = useState(desktopWidth)
+
     const [showCookieModal, setShowCookieModal] = useState(
         !localStorage.getItem('cookie')
     )
 
     const toggleShowNav = () => {
-        const mobileScreen = window.innerWidth < 1024
-        mobileScreen && setShowNav((is) => !is)
+        !desktopWidth && setShowNav((is) => !is)
     }
+
+    useEffect(() => {
+        const handleChangeWidth = () => {
+            setIsDesktop(desktopWidth)
+        }
+
+        window.addEventListener('resize', handleChangeWidth)
+
+        return () => window.removeEventListener('resize', handleChangeWidth)
+    }, [])
 
     useEffect(() => {
         const savedLanguage = localStorage.getItem('appLanguage')
@@ -88,6 +100,7 @@ const AppProvider = ({ children }) => {
                 setEmailStatus,
                 showCookieModal,
                 closeCookieModal,
+                isDesktop,
             }}
         >
             {children}

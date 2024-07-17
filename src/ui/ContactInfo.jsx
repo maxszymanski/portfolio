@@ -66,7 +66,7 @@ const Phone = styled(MdPhone)`
     font-size: 3rem;
 `
 
-const ContactsHeading = styled.h4`
+const ContactsHeading = styled.h3`
     padding: 0.5em 1em;
     text-align: center;
     font-size: 1.8rem;

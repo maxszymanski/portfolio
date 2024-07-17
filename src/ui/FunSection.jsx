@@ -71,7 +71,7 @@ function FunSection() {
     const { t } = useTranslation()
     return (
         <FunContainer>
-            <FunImage src="./images/fun.webp" />
+            <FunImage src="./images/fun.webp" alt="" loading="lazy" />
             <FactsBox>
                 {facts.map((fact) => (
                     <FunBox>

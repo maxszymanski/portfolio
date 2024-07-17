@@ -42,7 +42,7 @@ function Logo({ isMobile = false }) {
 
     return (
         <LogoLink to="/" onClick={handleClickLink} $isMobile={isMobile}>
-            <LogoImage src="/logo.svg"></LogoImage>
+            <LogoImage src="/logo.svg" alt="logo"></LogoImage>
             Max
         </LogoLink>
     )

@@ -14,13 +14,15 @@
         "welcome": "Jestem Max, doświadczony ",
         "introduction": "Łączę kreatywność z technologią, dostarczając nowoczesne i efektywne rozwiązania webowe.",
         "workingon": "Obecnie pracuję nad",
-        "contactme": "Skontaktuj się!"
+        "contactme": "Skontaktuj się!",
+        "alt": "zdjęcie hackera"
     },
     "nav": {
         "home": "Strona główna",
         "projects": "Projekty",
         "contact": "Kontakt",
-        "aboutMe": "O mnie"
+        "aboutMe": "O mnie",
+        "switcher": "Wybierz język"
     },
     "section": {
         "fun": "Ciekawostki",
@@ -47,7 +49,8 @@
         "viewAll": "Zobacz wszystkie ->",
         "live": "Podgląd ->",
         "livePhone": "Demo ->",
-        "code": "Kod ->"
+        "code": "Kod ->",
+        "alt": "Zdjęcie projektu"
     },
 
     "skills": {

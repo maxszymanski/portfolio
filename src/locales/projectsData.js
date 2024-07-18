@@ -38,7 +38,7 @@ export const allProjects = [
     {
         name: 'Wild Oasis',
         image: '/images/oasis.webp',
-        stack: 'React Styled-components',
+        stack: 'React Supabase Styled-components Tanstack-Query ',
         info: 'projects.aboutOasis',
         liveLink: 'https://bookings-wild.netlify.app/',
         codeLink: 'https://github.com/maxszymanski/wild-oasis',

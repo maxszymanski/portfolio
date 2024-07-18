@@ -116,7 +116,7 @@ function SkillSection() {
                     />
                     <SkillCard
                         title="skills.other"
-                        info="react-hook-forms i18n react-router react-icons
+                        info="react-hook-forms i18next react-router react-icons
                     react-hot-toast"
                     />
                 </SkillColumn>

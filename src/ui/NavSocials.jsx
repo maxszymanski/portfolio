@@ -50,15 +50,18 @@ function NavSocials() {
             <SocialLink
                 to="https://github.com/maxszymanski"
                 aria-label="Przejdź do profilu na GitHub"
+                target="_blank"
+                rel="noopener"
             >
                 <img src="./images/github.png" alt="GitHub" />
             </SocialLink>
-            <SocialLink to="https://pl.linkedin.com/">
-                <img
-                    src="./images/linkedin.png"
-                    alt="LinkedIn"
-                    aria-label="Przejdź do profilu na LinkedIn "
-                />
+            <SocialLink
+                to="https://linkedin.com/in/maksymilian-szymański-897a4a319"
+                aria-label="Przejdź do profilu na LinkedIn "
+                target="_blank"
+                rel="noopener"
+            >
+                <img src="./images/linkedin.png" alt="LinkedIn" />
             </SocialLink>
         </SocialBox>
     )

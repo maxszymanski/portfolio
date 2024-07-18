@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
+import ReactGA from 'react-ga4'
 import { AppProvider } from './context/AppContext'
 import GlobalStyles from './styles/GlobalStyles'
 import AppLayout from './ui/AppLayout'
@@ -36,6 +37,8 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+    ReactGA.initialize('G-7XJKLB2XSM')
+
     return (
         <AppProvider>
             <GlobalStyles />

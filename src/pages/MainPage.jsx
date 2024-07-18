@@ -5,9 +5,13 @@ import HomeProjectsSection from '../features/mainPage/HomeProjectsSection'
 import HomeSkillsSection from '../features/mainPage/HomeSkillsSection'
 import Main from '../ui/Main'
 import { Helmet } from 'react-helmet-async'
+import ReactGA from 'react-ga4'
 import { useTranslation } from 'react-i18next'
 
 function MainPage() {
+    ReactGA.send({
+        hitType,
+    })
     const { t } = useTranslation()
     return (
         <>

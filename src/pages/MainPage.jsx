@@ -10,7 +10,9 @@ import { useTranslation } from 'react-i18next'
 
 function MainPage() {
     ReactGA.send({
-        hitType,
+        hitType: 'pageviev',
+        page: '/',
+        title: 'MainPage',
     })
     const { t } = useTranslation()
     return (

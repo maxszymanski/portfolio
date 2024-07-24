@@ -1,4 +1,8 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import {
+    RouterProvider,
+    createBrowserRouter,
+    useLocation,
+} from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import ReactGA from 'react-ga4'
 import { AppProvider } from './context/AppContext'
@@ -37,7 +41,15 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+    const location = useLocation()
     ReactGA.initialize('G-7XJKLB2XSM')
+
+    useEffect(() => {
+        ReactGA.send({
+            hitType: 'pageview',
+            page: location.pathname + location.search,
+        })
+    }, [location])
 
     return (
         <AppProvider>

@@ -3,14 +3,8 @@ import ContactSection from '../ui/ContactSection'
 import Main from '../ui/Main'
 import Section from '../ui/Section'
 import { useTranslation } from 'react-i18next'
-import ReactGA from 'react-ga4'
 
 function Contact() {
-    ReactGA.send({
-        hitType: 'pageviev',
-        page: '/contact',
-        title: 'Contact',
-    })
     const { t } = useTranslation()
     return (
         <>

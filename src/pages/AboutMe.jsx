@@ -5,14 +5,8 @@ import Main from '../ui/Main'
 import Section from '../ui/Section'
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
-import ReactGA from 'react-ga4'
 
 function AboutMe() {
-    ReactGA.send({
-        hitType: 'pageviev',
-        page: '/aboutme',
-        title: 'AboutMe',
-    })
     const { t } = useTranslation()
     return (
         <>

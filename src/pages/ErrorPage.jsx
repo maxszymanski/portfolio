@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { screenWidth } from '../styles/mediaQueries'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
+import ReactGA from 'react-ga4'
 
 const ErrorContainer = styled.div`
     background-image: url(/images/404.webp);
@@ -89,6 +90,11 @@ const ErrorLink = styled(Link)`
 `
 
 function ErrorPage() {
+    ReactGA.send({
+        hitType: 'pageviev',
+        page: '/404',
+        title: 'ErrorPage',
+    })
     const { t } = useTranslation()
     return (
         <>

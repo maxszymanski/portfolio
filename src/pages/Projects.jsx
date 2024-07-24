@@ -5,8 +5,14 @@ import Main from '../ui/Main'
 import ProjectCard from '../ui/ProjectCard'
 import Section from '../ui/Section'
 import { useTranslation } from 'react-i18next'
+import ReactGA from 'react-ga4'
 
 function Projects() {
+    ReactGA.send({
+        hitType: 'pageviev',
+        page: '/projects',
+        title: 'Projects',
+    })
     const { t } = useTranslation()
     return (
         <>

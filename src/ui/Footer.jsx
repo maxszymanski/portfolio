@@ -80,6 +80,7 @@ const FooterDateTwo = styled.p`
 `
 
 function Footer() {
+    const currentYear = new Date().getFullYear()
     return (
         <StyledFooter>
             <FooterContainer>
@@ -95,7 +96,7 @@ function Footer() {
                         <img src="./images/github.png" alt="GitHub" />
                     </SocialLink>
                     <SocialLink
-                        to="https://linkedin.com/in/maksymilian-szymański-897a4a319"
+                        to="https://linkedin.com/in/max-szymanski"
                         aria-label="Przejdź do profilu na Linkedin"
                         target="_blank"
                         rel="noopener"
@@ -106,7 +107,7 @@ function Footer() {
             </FooterContainer>
             <FooterFoot>
                 <FooterDateTwo>&copy;</FooterDateTwo>
-                <FooterDate>2024 Max Szymański</FooterDate>
+                <FooterDate>{currentYear} Max Szymański</FooterDate>
             </FooterFoot>
         </StyledFooter>
     )

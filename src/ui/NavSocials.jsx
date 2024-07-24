@@ -56,7 +56,7 @@ function NavSocials() {
                 <img src="./images/github.png" alt="GitHub" />
             </SocialLink>
             <SocialLink
-                to="https://linkedin.com/in/maksymilian-szymański-897a4a319"
+                to="https://linkedin.com/in/max-szymanski"
                 aria-label="Przejdź do profilu na LinkedIn "
                 target="_blank"
                 rel="noopener"

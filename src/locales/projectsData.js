@@ -32,7 +32,7 @@ export const allProjects = [
         image: '/images/eltom.webp',
         stack: 'HTML CSS JavaScript PHP',
         info: 'projects.aboutEltom',
-        liveLink: 'https://eltom.online/',
+        liveLink: 'https://eltom.biz.pl/',
         codeLink: 'https://github.com/maxszymanski/El-Tom',
     },
     {

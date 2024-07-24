@@ -41,15 +41,7 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-    const location = useLocation()
     ReactGA.initialize('G-7XJKLB2XSM')
-
-    useEffect(() => {
-        ReactGA.send({
-            hitType: 'pageview',
-            page: location.pathname + location.search,
-        })
-    }, [location])
 
     return (
         <AppProvider>

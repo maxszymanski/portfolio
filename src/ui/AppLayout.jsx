@@ -8,10 +8,18 @@ import AnimatedCursor from 'react-animated-cursor'
 import Cookie from './Cookie'
 import { useAppContext } from '../context/useAppContext'
 import EmailStatusMessage from './EmailStatusMessage'
+import ReactGA from 'react-ga4'
 
 function AppLayout() {
     const { showCookieModal, emailStatus, isDesktop } = useAppContext()
-    const { pathname } = useLocation()
+    const { pathname, search } = useLocation()
+    useEffect(() => {
+        ReactGA.send({
+            hitType: 'pageview',
+            page: pathname + search,
+        })
+    }, [pathname, search])
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [pathname])

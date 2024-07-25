@@ -1,8 +1,4 @@
-import {
-    RouterProvider,
-    createBrowserRouter,
-    useLocation,
-} from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import ReactGA from 'react-ga4'
 import { AppProvider } from './context/AppContext'

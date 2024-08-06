@@ -9,6 +9,7 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import AboutMe from './pages/AboutMe'
 import ErrorPage from './pages/ErrorPage'
+import Privacy from './pages/Privacy'
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: '/aboutme',
                 element: <AboutMe />,
+            },
+            {
+                path: '/privacypolicy',
+                element: <Privacy />,
             },
         ],
     },

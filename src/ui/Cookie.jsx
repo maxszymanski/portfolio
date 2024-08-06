@@ -69,7 +69,7 @@ function Cookie() {
                     <p>{t('cookie.textOne')}</p>
                     <p>
                         {t('cookie.textTwo')}{' '}
-                        <TitleLink to="/privacypolity">
+                        <TitleLink to="/privacypolicy">
                             {t('cookie.link')}
                         </TitleLink>
                         .

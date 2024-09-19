@@ -1,5 +1,7 @@
 import styled from 'styled-components'
+import { useRef } from 'react'
 import { useAppContext } from '../context/useAppContext'
+import useClickOutside from '../hooks/useClickOutside'
 import NavigationLink from './NavigationLink'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useTranslation } from 'react-i18next'
@@ -31,7 +33,6 @@ const Nav = styled.nav`
         padding: 1em;
         height: fit-content;
         border-left: none;
-        padding-top: 4em;
     }
     @media ${screenWidth.xl} {
         padding: 1em 4em;
@@ -73,11 +74,19 @@ const NavList = styled.ul`
 `
 
 function Navigation() {
-    const { showNav } = useAppContext()
+    const { showNav, setShowNav } = useAppContext()
+    const navRef = useRef(null)
     const { t } = useTranslation()
 
+    const handleCloseNav = () => {
+        if (!showNav) return
+        setShowNav(false)
+    }
+
+    useClickOutside(navRef, handleCloseNav)
+
     return (
-        <Nav $showNav={showNav}>
+        <Nav $showNav={showNav} ref={navRef}>
             <NavContainer>
                 <Logo />
                 <NavList>

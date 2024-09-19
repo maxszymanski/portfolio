@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import BurgerMenu from './BurgerMenu'
 import { screenWidth } from '../styles/mediaQueries'
 import Logo from './Logo'
-import { useEffect, useState } from 'react'
 import { useAppContext } from '../context/useAppContext'
 
 const NavBox = styled.div`
@@ -13,7 +12,7 @@ const NavBox = styled.div`
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 2000;
     padding: 0.8em 1.5em;
     background-color: var(--background);
 

@@ -35,6 +35,7 @@ const trans = {
 
 const Label = styled.label`
     position: absolute;
+    z-index: 10;
     font-weight: 300;
     pointer-events: none;
     transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s,

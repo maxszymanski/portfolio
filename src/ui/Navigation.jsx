@@ -23,6 +23,7 @@ const Nav = styled.nav`
     @media ${screenWidth.md} {
         transform: translateX(${(props) => (props.$showNav ? '68%' : '100%')});
         border-left: 1px solid var(--color-stone);
+        padding-top: 1em;
     }
     @media ${screenWidth.lg} {
         position: absolute;
@@ -30,6 +31,7 @@ const Nav = styled.nav`
         padding: 1em;
         height: fit-content;
         border-left: none;
+        padding-top: 4em;
     }
     @media ${screenWidth.xl} {
         padding: 1em 4em;

@@ -20,6 +20,10 @@ const NavBox = styled.div`
         border-bottom: 1px solid var(--color-stone);
     }
 
+    @media ${screenWidth.md} {
+        z-index: 10;
+    }
+
     @media ${screenWidth.lg} {
         display: none;
     }

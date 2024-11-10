@@ -103,7 +103,10 @@ function SkillSection() {
                     />
                 </SkillColumn>
                 <SkillColumn>
-                    <SkillCard title="skills.frameworks" info="React Astro" />
+                    <SkillCard
+                        title="skills.frameworks"
+                        info="React Next.js Astro"
+                    />
                     <SkillCard
                         title="skills.tools"
                         info="VSCode Figma Git SCSS"

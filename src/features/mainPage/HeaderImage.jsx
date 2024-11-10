@@ -114,9 +114,9 @@ function HeaderImage() {
                     <TitleLink
                         target="_blank"
                         rel="noopener"
-                        to="https://tastyburrito.netlify.app/"
+                        to="https://paplanek.netlify.app/"
                     >
-                        Burrito App
+                        Paplanek
                     </TitleLink>{' '}
                 </TitleInfo>
             </WorkingBox>

@@ -1,14 +1,5 @@
 export const mainProjects = [
     {
-        name: 'Porfolio',
-        image: '/images/portfolio.webp',
-        stack: 'React Styled-component PHP',
-        info: 'projects.aboutPortfolio',
-        liveLink: '/',
-        codeLink: 'https://github.com/maxszymanski/my-page',
-        shadow: false,
-    },
-    {
         name: 'Burrito',
         image: '/images/burrito.webp',
         stack: 'React TypeScript Supabase Redux Tanstack-Query Tailwind ',
@@ -17,6 +8,26 @@ export const mainProjects = [
         codeLink: 'https://github.com/maxszymanski/burrito',
     },
     {
+        name: 'Paplanek',
+        image: '/images/paplanek.webp',
+        stack: 'React TypeScript Supabase Tanstack-Query Tailwind ',
+        info: 'projects.aboutPaplanek',
+        liveLink: 'https://paplanek.netlify.app/',
+        codeLink: 'https://github.com/maxszymanski/chat',
+    },
+    {
+        name: 'Porfolio',
+        image: '/images/portfolio.webp',
+        stack: 'React Styled-component PHP',
+        info: 'projects.aboutPortfolio',
+        liveLink: '/',
+        codeLink: 'https://github.com/maxszymanski/my-page',
+        shadow: false,
+    },
+]
+export const allProjects = [
+    ...mainProjects,
+    {
         name: 'projects.paintedSmile',
         image: '/images/painted.webp',
         stack: 'Astro JavaScript PHP Tailwind',
@@ -24,9 +35,14 @@ export const mainProjects = [
         liveLink: 'https://malowanyusmiech.pl/',
         codeLink: 'https://github.com/maxszymanski/painted-smile',
     },
-]
-export const allProjects = [
-    ...mainProjects,
+    {
+        name: 'Users List',
+        image: '/images/users.webp',
+        stack: 'React TypeScript, Redux, Tailwind',
+        info: 'projects.aboutList',
+        liveLink: 'https://maxszymanski-users-list.netlify.app/',
+        codeLink: 'https://github.com/maxszymanski/users-list',
+    },
     {
         name: 'Eltom',
         image: '/images/eltom.webp',

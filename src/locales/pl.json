@@ -30,7 +30,7 @@
     },
     "aboutMe": {
         "hello": "Cześć, jestem Max!",
-        "one": "Jestem front-end developerem z niemal dwutenim doświadczeniem. Moja przygoda z kodowaniem rozpoczęła się z ciekawości, a przerodziła się w pasję. Pracowałem nad różnorodnymi projektami, od prostych stron wizytówek po zaawansowane aplikacje webowe, zdobywając cenne doświadczenie z klientami.",
+        "one": "Jestem front-end developerem z dwutenim doświadczeniem. Moja przygoda z kodowaniem rozpoczęła się z ciekawości, a przerodziła się w pasję. Pracowałem nad różnorodnymi projektami, od prostych stron wizytówek po zaawansowane aplikacje webowe, zdobywając cenne doświadczenie z klientami.",
         "two": "Tworzę responsywne, intuicyjne i estetyczne strony oraz aplikacje internetowe, dbając o każdy szczegół od projektowania interfejsu po wdrożenie gotowego produktu.",
         "three": "Jestem otwarty na nowe wyzwania i zawsze gotowy do nauki, wierząc, że techniczna biegłość, kreatywność oraz nieustanny rozwój są kluczowe dla sukcesu w tej branży.",
         "more": "Czytaj więcej ->"
@@ -42,6 +42,7 @@
         "aboutPaplanek": "Aplikacja do komunikacji w czasie rzeczywistym, oferująca live chat, możliwość przesyłania zdjęć oraz tworzenia własnego profilu.",
         "aboutPainted": "Strona internetowa firmy z animacjami dla dzieci, z intuicyjnym interfejsem, informacjami o usługach i galerią zdjęć.",
         "aboutList": "Projekt rekrutacyjny z zarządzaniem stanem aplikacji w Redux, obejmujący obsługę tabeli użytkowników oraz filtrowanie i sortowanie danych.",
+        "aboutRide": "Aplikacja do śledzenia codziennych podróży, analizy statystyk i zarządzania danymi, z ograniczonym dostępem.",
         "aboutPortfolio": "Strona portfolio, zawierająca szczegółowe opisy moich projektów, informacje o mnie oraz dane kontaktowe wraz z formularzem. ",
         "aboutEltom": "Strona internetowa firmy elektrycznej, z nowoczesnym designem, informacjami o usługach i formularzem kontaktowym.",
         "aboutExplorer": "Interaktywna aplikacja, która pozwala użytkownikom odkrywać różne kraje na całym świecie.",

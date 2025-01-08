@@ -16,6 +16,17 @@ export const mainProjects = [
         codeLink: 'https://github.com/maxszymanski/chat',
     },
     {
+        name: 'projects.paintedSmile',
+        image: '/images/painted.webp',
+        stack: 'Astro JavaScript PHP Tailwind',
+        info: 'projects.aboutPainted',
+        liveLink: 'https://malowanyusmiech.pl/',
+        codeLink: 'https://github.com/maxszymanski/painted-smile',
+    },
+]
+export const allProjects = [
+    ...mainProjects,
+    {
         name: 'Porfolio',
         image: '/images/portfolio.webp',
         stack: 'React Styled-component PHP',
@@ -24,16 +35,13 @@ export const mainProjects = [
         codeLink: 'https://github.com/maxszymanski/my-page',
         shadow: false,
     },
-]
-export const allProjects = [
-    ...mainProjects,
     {
-        name: 'projects.paintedSmile',
-        image: '/images/painted.webp',
-        stack: 'Astro JavaScript PHP Tailwind',
-        info: 'projects.aboutPainted',
-        liveLink: 'https://malowanyusmiech.pl/',
-        codeLink: 'https://github.com/maxszymanski/painted-smile',
+        name: 'Ride',
+        image: '/images/ride.webp',
+        stack: 'React Zustand Supabase Tanstack-Query Tailwind',
+        info: 'projects.aboutRide',
+        liveLink: 'https://agaride.netlify.app/',
+        codeLink: 'https://github.com/maxszymanski/ride',
     },
     {
         name: 'Users List',

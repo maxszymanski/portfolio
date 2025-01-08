@@ -31,7 +31,7 @@
     },
     "aboutMe": {
         "hello": "Hello, I'm Max!",
-        "one": "I am a front-end developer with one and a half years of experience. My adventure with coding started out of curiosity and turned into a passion. I have worked on a variety of projects, from simple business card pages to advanced web applications, gaining valuable experience with clients.",
+        "one": "I am a front-end developer with two years of experience. My adventure with coding started out of curiosity and turned into a passion. I have worked on a variety of projects, from simple business card pages to advanced web applications, gaining valuable experience with clients.",
         "two": "I create responsive, intuitive and aesthetically pleasing websites and web applications, taking care of every detail from interface design to implementation of the finished product.",
         "three": "I am open to new challenges and always ready to learn, believing that technical proficiency, creativity and continuous development are key to success in this industry.",
         "more": "Read more ->"
@@ -43,6 +43,7 @@
         "aboutPaplanek": "A real-time communication application offering live chat, photo uploading and custom profile creation.",
         "aboutPainted": "Children's animation company website, with an intuitive interface, information about services and a photo gallery.",
         "aboutList": "Recruitment project with application state management in Redux, including user table support and data filtering and sorting.",
+        "aboutRide": "An app to track daily travel, analyze statistics and manage data, with limited access.",
         "aboutPortfolio": "A portfolio site with detailed descriptions of my projects, information about me and contact information with and form.",
         "aboutEltom": "A website an electrical company, with a modern design,  designed by me, information about services and a contact form.",
         "aboutExplorer": "An interactive application that allows users to explore different countries around the world. ",

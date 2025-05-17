@@ -31,15 +31,17 @@
     },
     "aboutMe": {
         "hello": "Hello, I'm Max!",
-        "one": "I am a front-end developer with two years of experience. My adventure with coding started out of curiosity and turned into a passion. I have worked on a variety of projects, from simple business card pages to advanced web applications, gaining valuable experience with clients.",
+        "one": "I am a front-end developer with over two years of experience. My adventure with coding started out of curiosity, and quickly turned into a passion.  I've worked on a wide range of projects, from simple business card pages to more advanced web applications, working with clients and developing my skills.",
         "two": "I create responsive, intuitive and aesthetically pleasing websites and web applications, taking care of every detail from interface design to implementation of the finished product.",
-        "three": "I am open to new challenges and always ready to learn, believing that technical proficiency, creativity and continuous development are key to success in this industry.",
+        "three": "I am open to new challenges and eager to learn new things to constantly improve my skills.",
         "more": "Read more ->"
     },
     "projects": {
         "paintedSmile": "Painted Smile",
         "rockPaper": "Rock Paper Scissors",
         "aboutBurrito": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history.",
+        "aboutAcademigo": "A platform for finding and rating online courses. Allows you to manage courses and your account in your own panel.",
+        "aboutMatbud": "A construction company website with an intuitive CMS (Strapi) panel for easy content management.",
         "aboutPaplanek": "A real-time communication application offering live chat, photo uploading and custom profile creation.",
         "aboutPainted": "Children's animation company website, with an intuitive interface, information about services and a photo gallery.",
         "aboutList": "Recruitment project with application state management in Redux, including user table support and data filtering and sorting.",

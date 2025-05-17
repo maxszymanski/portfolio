@@ -13,7 +13,19 @@ const Card = styled.div`
     border: solid 1px var(--color-gray);
     border-radius: 2px;
     overflow: hidden;
-    ${shadow}
+    -webkit-box-shadow: ${(props) =>
+        props.$extraShadow
+            ? '0px 0px 24px -1px var(--color-primary)'
+            : '0px 0px 34px -1px rgba(73, 75, 77, 0.46)'};
+
+    -moz-box-shadow: ${(props) =>
+        props.$extraShadow
+            ? '0px 0px 24px -1px var(--color-primary)'
+            : '0px 0px 34px -1px rgba(73, 75, 77, 0.46)'};
+    box-shadow: ${(props) =>
+        props.$extraShadow
+            ? '0px 0px 24px -1px var(--color-primary)'
+            : '0px 0px 34px -1px rgba(73, 75, 77, 0.46)'};
 `
 
 const CardImageBox = styled.div`
@@ -93,6 +105,7 @@ function ProjectCard({ project }) {
         liveLink,
         codeLink,
         shadow = true,
+        extraShadow = false,
     } = project
 
     const smallPhone = window.innerWidth < 340
@@ -101,7 +114,7 @@ function ProjectCard({ project }) {
         name === 'projects.paintedSmile' || 'projects.rockPaper'
 
     return (
-        <Card>
+        <Card $extraShadow={extraShadow}>
             <CardImageBox $withShadow={shadow}>
                 <CardImage
                     src={image}

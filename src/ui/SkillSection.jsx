@@ -105,7 +105,7 @@ function SkillSection() {
                 <SkillColumn>
                     <SkillCard
                         title="skills.frameworks"
-                        info="React Next.js Astro"
+                        info="React Next.js Astro EJS Svelte SvelteKit "
                     />
                     <SkillCard
                         title="skills.tools"
@@ -115,12 +115,12 @@ function SkillSection() {
                 <SkillColumn>
                     <SkillCard
                         title="skills.database"
-                        info="Supabase Tanstack-Query Redux Styled-component Tailwind "
+                        info="Supabase Strapi  Redux Styled-component  Tailwind Tanstack-Query Zustand"
                     />
                     <SkillCard
                         title="skills.other"
-                        info="react-hook-forms i18next react-router react-icons
-                    react-hot-toast"
+                        info="React-Hook-Forms i18next React-Router 
+                     Hot-toast Zod Nodemailer Quill React-crop"
                     />
                 </SkillColumn>
             </SkillBoxs>

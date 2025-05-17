@@ -114,9 +114,9 @@ function HeaderImage() {
                     <TitleLink
                         target="_blank"
                         rel="noopener"
-                        to="https://paplanek.netlify.app/"
+                        to="https://academigo.pl"
                     >
-                        Paplanek
+                        Academigo
                     </TitleLink>{' '}
                 </TitleInfo>
             </WorkingBox>

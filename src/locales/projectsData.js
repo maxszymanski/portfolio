@@ -1,5 +1,22 @@
 export const mainProjects = [
     {
+        name: 'Paplanek',
+        image: '/images/paplanek.webp',
+        stack: 'React TypeScript Supabase Tailwind Tanstack-Query',
+        info: 'projects.aboutPaplanek',
+        liveLink: 'https://paplanek.netlify.app/',
+        codeLink: 'https://github.com/maxszymanski/chat',
+    },
+    {
+        name: 'Academigo',
+        image: '/images/academigo.webp',
+        stack: 'Next.js React TypeScript Supabase Tailwind Zustand Zod Quill Nodemailer',
+        info: 'projects.aboutAcademigo',
+        liveLink: 'https://academigo.pl/',
+        codeLink: 'https://github.com/maxszymanski/academigo',
+        extraShadow: true,
+    },
+    {
         name: 'Burrito',
         image: '/images/burrito.webp',
         stack: 'React TypeScript Supabase Redux Tanstack-Query Tailwind ',
@@ -7,14 +24,9 @@ export const mainProjects = [
         liveLink: 'https://tastyburrito.netlify.app/',
         codeLink: 'https://github.com/maxszymanski/burrito',
     },
-    {
-        name: 'Paplanek',
-        image: '/images/paplanek.webp',
-        stack: 'React TypeScript Supabase Tanstack-Query Tailwind ',
-        info: 'projects.aboutPaplanek',
-        liveLink: 'https://paplanek.netlify.app/',
-        codeLink: 'https://github.com/maxszymanski/chat',
-    },
+]
+export const allProjects = [
+    ...mainProjects,
     {
         name: 'projects.paintedSmile',
         image: '/images/painted.webp',
@@ -23,9 +35,15 @@ export const mainProjects = [
         liveLink: 'https://malowanyusmiech.pl/',
         codeLink: 'https://github.com/maxszymanski/painted-smile',
     },
-]
-export const allProjects = [
-    ...mainProjects,
+
+    {
+        name: 'Matbud',
+        image: '/images/matbud.webp',
+        stack: 'Next.js Strapi Axios Tailwind Nodemailer Swiper Zustand Zod',
+        info: 'projects.aboutMatbud',
+        liveLink: 'https://matbudnet.pl/',
+        codeLink: 'https://github.com/maxszymanski/matbud-frontend',
+    },
     {
         name: 'Porfolio',
         image: '/images/portfolio.webp',
@@ -35,6 +53,7 @@ export const allProjects = [
         codeLink: 'https://github.com/maxszymanski/my-page',
         shadow: false,
     },
+
     {
         name: 'Ride',
         image: '/images/ride.webp',

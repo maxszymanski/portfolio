@@ -30,7 +30,7 @@
     },
     "aboutMe": {
         "hello": "Cześć, jestem Max!",
-        "one": "Jestem front-end developerem z ponad dwuletnim doświadczeniem. Moja przygoda z kodowaniem zaczęła się z ciekawości, a szybko przerodziła się w pasję.  Pracowałem nad wieloma projektami, od prostych stron wizytówek po bardziej zaawansowane aplikacje webowe, współpracując z klientami i rozwijając swoje umiejętności.",
+        "one": "Jestem front-end developerem z ponad 2,5-letnim doświadczeniem. Moja przygoda z kodowaniem zaczęła się z ciekawości, a szybko przerodziła się w pasję.  Pracowałem nad wieloma projektami, od prostych stron wizytówek po bardziej zaawansowane aplikacje webowe, współpracując z klientami i rozwijając swoje umiejętności.",
         "two": "Tworzę responsywne, intuicyjne i estetyczne strony oraz aplikacje internetowe, dbając o każdy szczegół od projektowania interfejsu po wdrożenie gotowego produktu.",
         "three": "Jestem otwarty na nowe wyzwania i chętnie uczę się nowych rzeczy, by stale podnosić swoje umiejętności.",
         "more": "Czytaj więcej ->"
@@ -61,9 +61,9 @@
     "skills": {
         "languages": "Języki",
         "frameworks": "Frameworki",
-        "tools": "Narzędzia",
-        "database": "Bazy danych i biblioteki",
-        "other": "Inne"
+        "tools": "Backend i narzędzia",
+        "state": "Stan i dane",
+        "styles": "Stylowanie i UI"
     },
 
     "contact": {

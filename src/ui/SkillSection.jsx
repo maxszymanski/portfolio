@@ -109,18 +109,17 @@ function SkillSection() {
                     />
                     <SkillCard
                         title="skills.tools"
-                        info="VSCode Figma Git SCSS"
+                        info="Supabase Strapi Nodemailer Quill React-crop VSCode Git"
                     />
                 </SkillColumn>
                 <SkillColumn>
                     <SkillCard
-                        title="skills.database"
-                        info="Supabase Strapi  Redux Styled-component  Tailwind Tanstack-Query Zustand"
+                        title="skills.state"
+                        info="Redux Zustand React Router Tanstack-Query i18next Zod React-Hook-Form Hot-toast   "
                     />
                     <SkillCard
-                        title="skills.other"
-                        info="React-Hook-Forms i18next React-Router 
-                     Hot-toast Zod Nodemailer Quill React-crop"
+                        title="skills.styles"
+                        info="Tailwind Styled-component Figma SCSS"
                     />
                 </SkillColumn>
             </SkillBoxs>

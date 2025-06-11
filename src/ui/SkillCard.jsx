@@ -14,7 +14,7 @@ export const CardSkill = styled.div`
 const SkillCardTitle = styled.h3`
     border-bottom: 1px solid var(--color-gray);
     font-weight: 400;
-    padding: 0.5em 0.8em;
+    padding: 0.5em 0.5em;
     font-size: 1.7rem;
     text-align: center;
 `
@@ -23,6 +23,7 @@ const SkillCardInfo = styled.p`
     padding: 0.8em;
     font-size: 1.5rem;
     text-align: center;
+    line-height: 180%;
 `
 
 function SkillCard({ title, info }) {

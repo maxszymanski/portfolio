@@ -3,6 +3,10 @@ import { initReactI18next } from 'react-i18next'
 import plTranslation from './src/locales/pl.json'
 import enTranslation from './src/locales/en.json'
 
+const savedLanguage =
+    localStorage.getItem('appLanguage') ||
+    (navigator.language.startsWith('pl') ? 'pl' : 'en')
+
 const resources = {
     pl: { translation: plTranslation },
     en: { translation: enTranslation },
@@ -10,8 +14,9 @@ const resources = {
 
 i18n.use(initReactI18next).init({
     resources,
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: savedLanguage,
+    fallbackLng: 'pl',
+    supportedLngs: ['en', 'pl'],
     interpolation: { escapeValue: false },
 })
 

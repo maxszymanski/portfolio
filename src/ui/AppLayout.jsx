@@ -35,7 +35,7 @@ function AppLayout() {
             <Footer />
             {showEmailStatus && <EmailStatusMessage success={showSucces} />}
             {showCookieModal && <Cookie />}
-            {isDesktop && (
+            {/* {isDesktop && (
                 <AnimatedCursor
                     innerSize={10}
                     outerSize={35}
@@ -50,7 +50,7 @@ function AppLayout() {
                         border: '2px solid var(--color-primary)',
                     }}
                 />
-            )}
+            )} */}
         </>
     )
 }

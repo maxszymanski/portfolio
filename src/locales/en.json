@@ -42,6 +42,8 @@
         "aboutBurrito": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history.",
         "aboutAcademigo": "A platform for finding and rating online courses. Allows you to manage courses and your account in your own panel.",
         "aboutMatbud": "A construction company website with an intuitive CMS (Strapi) panel for easy content management.",
+        "aboutSolectwo": "Website with article and image management, featuring a custom-built admin panel.",
+        "aboutSpend": "Frontend development of a website for a client specializing in elevating global transactions through localized payment solutions.",
         "aboutPaplanek": "A real-time communication application offering live chat, photo uploading and custom profile creation.",
         "aboutPainted": "Children's animation company website, with an intuitive interface, information about services and a photo gallery.",
         "aboutList": "Recruitment project with application state management in Redux, including user table support and data filtering and sorting.",

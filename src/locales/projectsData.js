@@ -17,12 +17,12 @@ export const mainProjects = [
         extraShadow: true,
     },
     {
-        name: 'Burrito',
-        image: '/images/burrito.webp',
-        stack: 'React TypeScript Supabase Redux Tanstack-Query Tailwind ',
-        info: 'projects.aboutBurrito',
-        liveLink: 'https://tastyburrito.netlify.app/',
-        codeLink: 'https://github.com/maxszymanski/burrito',
+        name: 'Sentient',
+        image: '/images/sentient.webp',
+        stack: 'Next.js TypeScript Tailwind Rive Framer-motion FullPage.js ',
+        info: 'projects.aboutSentient',
+        liveLink: 'https://sentient-ten.vercel.app/',
+        codeLink: 'https://github.com/maxszymanski/sentient',
     },
 ]
 export const allProjects = [
@@ -35,7 +35,14 @@ export const allProjects = [
         liveLink: 'https://malowanyusmiech.pl/',
         codeLink: 'https://github.com/maxszymanski/painted-smile',
     },
-
+    {
+        name: 'Burrito',
+        image: '/images/burrito.webp',
+        stack: 'React TypeScript Supabase Redux Tanstack-Query Tailwind ',
+        info: 'projects.aboutBurrito',
+        liveLink: 'https://tastyburrito.netlify.app/',
+        codeLink: 'https://github.com/maxszymanski/burrito',
+    },
     {
         name: 'Spend',
         image: '/images/spend.webp',

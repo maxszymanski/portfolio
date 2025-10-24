@@ -1,16 +1,17 @@
 export const mainProjects = [
     {
-        name: 'Paplanek',
-        image: '/images/paplanek.webp',
-        stack: 'React TypeScript Supabase Tailwind Tanstack-Query',
-        info: 'projects.aboutPaplanek',
-        liveLink: 'https://paplanek.netlify.app/',
-        codeLink: 'https://github.com/maxszymanski/chat',
+        name: 'Off Grid',
+        image: '/images/grid.webp',
+        stack: 'Next.js TypeScript Tailwind Zustand Zod ',
+        info: 'projects.aboutGrid',
+        liveLink: 'https://www.offgrid.cash',
+        codeLink: 'https://github.com/maxszymanski',
     },
+
     {
         name: 'Academigo',
         image: '/images/academigo.webp',
-        stack: 'Next.js React TypeScript Supabase Tailwind Zustand Zod Quill Nodemailer',
+        stack: 'Next.js TypeScript Supabase Tailwind Zustand Zod Quill Nodemailer',
         info: 'projects.aboutAcademigo',
         liveLink: 'https://academigo.pl/',
         codeLink: 'https://github.com/maxszymanski/academigo',
@@ -19,7 +20,7 @@ export const mainProjects = [
     {
         name: 'Sentient',
         image: '/images/sentient.webp',
-        stack: 'Next.js TypeScript Tailwind Rive Framer-motion FullPage.js ',
+        stack: 'Next.js TypeScript Tailwind Rive Framer-motion FullPage.js',
         info: 'projects.aboutSentient',
         liveLink: 'https://sentient-ten.vercel.app/',
         codeLink: 'https://github.com/maxszymanski/sentient',
@@ -27,6 +28,14 @@ export const mainProjects = [
 ]
 export const allProjects = [
     ...mainProjects,
+    {
+        name: 'Spend',
+        image: '/images/spend.webp',
+        stack: 'Next.js TypeScript Tailwind Zustand Zod',
+        info: 'projects.aboutSpend',
+        liveLink: 'https://spend.com/',
+        codeLink: 'https://github.com/maxszymanski/',
+    },
     {
         name: 'projects.paintedSmile',
         image: '/images/painted.webp',
@@ -36,20 +45,20 @@ export const allProjects = [
         codeLink: 'https://github.com/maxszymanski/painted-smile',
     },
     {
+        name: 'Paplanek',
+        image: '/images/paplanek.webp',
+        stack: 'React TypeScript Supabase Tailwind Tanstack-Query',
+        info: 'projects.aboutPaplanek',
+        liveLink: 'https://paplanek.netlify.app/',
+        codeLink: 'https://github.com/maxszymanski/chat',
+    },
+    {
         name: 'Burrito',
         image: '/images/burrito.webp',
         stack: 'React TypeScript Supabase Redux Tanstack-Query Tailwind ',
         info: 'projects.aboutBurrito',
         liveLink: 'https://tastyburrito.netlify.app/',
         codeLink: 'https://github.com/maxszymanski/burrito',
-    },
-    {
-        name: 'Spend',
-        image: '/images/spend.webp',
-        stack: 'Next.js TypeScript Tailwind Zustand Zod',
-        info: 'projects.aboutSpend',
-        liveLink: 'https://spend.com/',
-        codeLink: 'https://github.com/maxszymanski/',
     },
     {
         name: 'Zagórze',
@@ -78,14 +87,14 @@ export const allProjects = [
         codeLink: 'https://github.com/maxszymanski/matbud-frontend',
     },
 
-    {
-        name: 'Ride',
-        image: '/images/ride.webp',
-        stack: 'React Zustand Supabase Tanstack-Query Tailwind',
-        info: 'projects.aboutRide',
-        liveLink: 'https://agaride.netlify.app/',
-        codeLink: 'https://github.com/maxszymanski/ride',
-    },
+    // {
+    //     name: 'Ride',
+    //     image: '/images/ride.webp',
+    //     stack: 'React Zustand Supabase Tanstack-Query Tailwind',
+    //     info: 'projects.aboutRide',
+    //     liveLink: 'https://agaride.netlify.app/',
+    //     codeLink: 'https://github.com/maxszymanski/ride',
+    // },
     {
         name: 'Eltom',
         image: '/images/eltom.webp',

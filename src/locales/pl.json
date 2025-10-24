@@ -11,7 +11,7 @@
     },
     "header": {
         "hi": "Witaj",
-        "welcome": "Jestem Max, ambitny ",
+        "welcome": "Jestem Max ",
         "introduction": "Łączę kreatywność z technologią, dostarczając nowoczesne i efektywne rozwiązania webowe.",
         "workingon": "Obecnie pracuję nad",
         "contactme": "Skontaktuj się!",
@@ -42,6 +42,7 @@
         "aboutAcademigo": "Platforma do szukania i oceniania kursów online z różnych serwisów edukacyjnych. Umożliwia zarządzanie kursami oraz kontem we własnym panelu.",
         "aboutMatbud": "Strona internetowa firmy budowlanej z intuicyjnym panelem CMS (Strapi) do łatwego zarządzania treścią. ",
         "aboutSentient": "Strona internetowa dla firmy Sentient, tworzącej inteligentne rozwiązania AI wspierające użytkowników w organizacji pracy. ",
+        "aboutGrid": "Frontend strony internetowej dla międzynarodowej firmy z branży kryptowalut, oferującej anonimowe karty płatnicze bez KYC. ",
         "aboutSpend": "Frontend strony internetowej dla klienta zajmującego się globalnymi transakcjami z wykorzystaniem lokalnych rozwiązań płatniczych. ",
         "aboutSolectwo": "Strona internetowa z możliwością dodawania artykułów i zdjęć, wyposażona w customowy panel administracyjny. ",
         "aboutPaplanek": "Aplikacja do komunikacji w czasie rzeczywistym, oferująca live chat, możliwość przesyłania zdjęć oraz tworzenia własnego profilu.",

@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
   --background: rgb(40, 44, 51);
   --color-white: rgb(238, 242, 255);
   --color-primary: rgb(199, 120, 221);
+  --color-primary2: #e4e7f5;
   --color-gray: rgb(171, 178, 191);
   --color-stone: rgb(77, 81, 88);
   --color-socialLink: rgba(77, 81, 88, 0.3);

@@ -15,16 +15,16 @@ const Card = styled.div`
     overflow: hidden;
     -webkit-box-shadow: ${(props) =>
         props.$extraShadow
-            ? '0px 0px 24px -1px var(--color-primary)'
+            ? '0px 0px 24px -1px var(--color-primary2)'
             : '0px 0px 34px -1px rgba(73, 75, 77, 0.46)'};
 
     -moz-box-shadow: ${(props) =>
         props.$extraShadow
-            ? '0px 0px 24px -1px var(--color-primary)'
+            ? '0px 0px 24px -1px var(--color-primary2)'
             : '0px 0px 34px -1px rgba(73, 75, 77, 0.46)'};
     box-shadow: ${(props) =>
         props.$extraShadow
-            ? '0px 0px 24px -1px var(--color-primary)'
+            ? '0px 0px 24px -1px var(--color-primary2)'
             : '0px 0px 34px -1px rgba(73, 75, 77, 0.46)'};
 `
 

@@ -31,7 +31,7 @@
     },
     "aboutMe": {
         "hello": "Hello, I'm Max!",
-        "one": "I am a front-end developer with over 2.5 years of experience. My adventure with coding started out of curiosity, and quickly turned into a passion.  I've worked on a wide range of projects, from simple business card pages to more advanced web applications, working with clients and developing my skills.",
+        "one": "I am a front-end developer with 3 years of experience. My adventure with coding started out of curiosity, and quickly turned into a passion.  I've worked on a wide range of projects, from simple business card pages to more advanced web applications, working with clients and developing my skills.",
         "two": "I create responsive, intuitive and aesthetically pleasing websites and web applications, taking care of every detail from interface design to implementation of the finished product.",
         "three": "I am open to new challenges and eager to learn new things to constantly improve my skills.",
         "more": "Read more ->"
@@ -40,10 +40,11 @@
         "paintedSmile": "Painted Smile",
         "rockPaper": "Rock Paper Scissors",
         "aboutBurrito": "An app for ordering food from restaurants with features for creating an account, editing a profile and viewing order history.",
+        "aboutChain": "Frontend website for an international blockchain company offering stablecoin exchange for fiat currencies.",
         "aboutAcademigo": "A platform for finding and rating online courses. Allows you to manage courses and your account in your own panel.",
         "aboutMatbud": "A construction company website with an intuitive CMS (Strapi) panel for easy content management.",
         "aboutSolectwo": "Website with article and image management, featuring a custom-built admin panel.",
-        "aboutSentient": "Website for Sentient, a company that creates intelligent AI solutions to support users in organizing their work.",
+        "aboutSentient": "Website for a company creating intelligent AI solutions to help users organize their work.",
         "aboutGrid": "Website frontend for an international cryptocurrency company offering anonymous payment cards without KYC. ",
         "aboutSpend": "Frontend development of a website for a client specializing in elevating global transactions through localized payment solutions.",
         "aboutPaplanek": "A real-time communication application offering live chat, photo uploading and custom profile creation.",
